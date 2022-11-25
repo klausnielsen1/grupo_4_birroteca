@@ -15,9 +15,17 @@ Klaus: enfocarme en el back-end y en la planificacion del html.
 
 Referencias:
 Formulario Log in (https://wireframe.cc/oaikVH)(https://www.facebook.com)
+
+
 Formulario de registro (https://wireframe.cc/pro/pp/230b7706a607112)(https://ar.pinterest.com/pin/703546773053529482/)
-Home ( https://www.laurus.com.ar/, https://www.cervezapatagonia.com.ar/)
+
+
+Home ( https://www.laurus.com.ar/, https://www.cervezapatagonia.com.ar/, https://strange.com.ar/, https://www.cervezaantares.com/)
+
+
 Detalle de producto ( https://www.mercadolibre.com.ar/)
+
+
 Carrito (https://dpw2.servidoronline.net/grupo4-p2/)
 
 
