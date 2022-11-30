@@ -11,6 +11,7 @@ Dado a la moda que rige hoy en dia en cuanto a las cervecerias, hamburgueserias,
 DESCRIPCION DEL EQUIPO:
 Klaus: enfocarme en el back-end y en la planificacion del html.
 Agostina: tengo 28 años. Actualmente estudio Desarrollo web. Soy amante de los perros, las plantas, me gusta viajar y vivir cerca de la cordillera por sus paisajes y las actividades que se pueden realizar allí. 
+Tobias: Tengo 21 años, soy de Buenos Aires. Me gusta mucho el diseño, entrenar y viajar. Me enfocare en la parte mas visual del proyecto con CSS y HTML.
 
 
 
