@@ -13,7 +13,7 @@ Klaus: tengo 24 años. soy baterista y tengo una banda de rock fusion con amigos
 Agostina: tengo 28 años. Actualmente estudio Desarrollo web. Soy amante de los perros, las plantas, me gusta viajar y vivir cerca de la cordillera por sus paisajes y las actividades que se pueden realizar allí. 
 Tobias: Tengo 21 años, soy de Buenos Aires. Me gusta mucho el diseño, entrenar y viajar. Me enfocare en la parte mas visual del proyecto con CSS y HTML.
 Bautista: tengo 24 años soy de Buenos Aires trabajo como encargado en un restaurante y tambien estudio hoteleria y turismo
-
+tomas: tengo 21 vivo en buenos aires, me gusta hacer ejercicio, mirar anime, jugar videojuegos y trabajo en un taller 
 
 
 
@@ -33,9 +33,10 @@ wireframes:
 (https://www.figma.com/proto/WJRhrXTbUWvYjjv5mk64Nq/mobile?node-id=1%3A4&scaling=scale-down&page-id=0%3A1)
 (https://www.figma.com/proto/Gr5ap1I6lq3nCkYoGJCmD1/tablet?node-id=1%3A5&scaling=scale-down&page-id=0%3A1)
 (https://www.figma.com/proto/JsGCxvXCveEAvW3y1PSNYt/pc?scaling=min-zoom&page-id=0%3A1&node-id=1%3A2)
+
+
+
+Carrito: (https://dpw2.servidoronline.net/grupo4-p2/)
 (https://wireframe.cc/pro/pp/3172107ac606856)
-
-
-Carrito (https://dpw2.servidoronline.net/grupo4-p2/)
 
 
