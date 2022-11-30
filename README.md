@@ -10,6 +10,8 @@ Dado a la moda que rige hoy en dia en cuanto a las cervecerias, hamburgueserias,
 
 DESCRIPCION DEL EQUIPO:
 Klaus: enfocarme en el back-end y en la planificacion del html.
+Agostina: tengo 28 años. Actualmente estudio Desarrollo web. Soy amante de los perros, las plantas, me gusta viajar y vivir cerca de la cordillera por sus paisajes y las actividades que se pueden realizar allí. 
+
 
 
 
@@ -20,8 +22,9 @@ Formulario Log in (https://wireframe.cc/oaikVH)(https://www.facebook.com)
 Formulario de registro (https://wireframe.cc/pro/pp/230b7706a607112)(https://ar.pinterest.com/pin/703546773053529482/)
 
 
-Home ( https://www.laurus.com.ar/, https://www.cervezapatagonia.com.ar/, https://strange.com.ar/, https://www.cervezaantares.com/)
-
+Home --> referencias: ( https://www.laurus.com.ar/, https://www.cervezapatagonia.com.ar/, https://strange.com.ar/, https://www.cervezaantares.com/)
+--> wireframes: https://drive.google.com/file/d/1gqQ_GBg65PqgHuPQ1_2PtVpWwNemgUQt/view?usp=sharing HOME 1
+https://drive.google.com/file/d/1ZznL1rCEbhTBAnVs6aHv14MLjBzXi6w5/view?usp=sharing HOME 2
 
 Detalle de producto :  referencia ( https://www.mercadolibre.com.ar/)
 wireframes:
