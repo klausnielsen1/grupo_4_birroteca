@@ -12,6 +12,7 @@ DESCRIPCION DEL EQUIPO:
 Klaus: tengo 24 años. soy baterista y tengo una banda de rock fusion con amigos. vivi unos años en estados unidos y me gusta jugar al tenis.
 Agostina: tengo 28 años. Actualmente estudio Desarrollo web. Soy amante de los perros, las plantas, me gusta viajar y vivir cerca de la cordillera por sus paisajes y las actividades que se pueden realizar allí. 
 Tobias: Tengo 21 años, soy de Buenos Aires. Me gusta mucho el diseño, entrenar y viajar. Me enfocare en la parte mas visual del proyecto con CSS y HTML.
+Bautista: tengo 24 años soy de Buenos Aires trabajo como encargado en un restaurante y tambien estudio hoteleria y turismo
 
 
 
