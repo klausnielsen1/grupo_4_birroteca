@@ -9,7 +9,7 @@ Publico que apunta el sitio:
 Dado a la moda que rige hoy en dia en cuanto a las cervecerias, hamburgueserias, etc, queremos crear una pagina web enfocada a gente joven (18-35 años). Nos gustaria de alguna manera poder tambien resaltar en cuanto a la originalidad del proyecto, por ende tratar de generar un dialogo entre el cliente y la pagina web, el cual te lleve a personalizar el estilo de cerveza que "necesitas"  consumir, y asi asentuar clientes. 
 
 DESCRIPCION DEL EQUIPO:
-Klaus: enfocarme en el back-end y en la planificacion del html.
+Klaus: tengo 24 años. soy baterista y tengo una banda de rock fusion con amigos. vivi unos años en estados unidos y me gusta jugar al tenis.
 Agostina: tengo 28 años. Actualmente estudio Desarrollo web. Soy amante de los perros, las plantas, me gusta viajar y vivir cerca de la cordillera por sus paisajes y las actividades que se pueden realizar allí. 
 Tobias: Tengo 21 años, soy de Buenos Aires. Me gusta mucho el diseño, entrenar y viajar. Me enfocare en la parte mas visual del proyecto con CSS y HTML.
 
