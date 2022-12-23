@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto';
     background: #4568DC;
     background: linear-gradient(to right, #B06AB3, #4568DC);
-    height: 800px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +55,7 @@ h2{
 }
 
 form {
+    
     background: #fff;
     padding: 30px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
@@ -71,13 +72,14 @@ form:hover{
 
 
 form .text{
+    
     position: relative;
     margin: 45px ;
 }
 
-input{
+.input{
     background: none;
-    color: white;
+    color: rgb(14, 13, 13);
     border-radius: 5px;
     font-size: 18px;
     padding: 2px 10px 5px 5px;
@@ -87,7 +89,7 @@ input{
     outline: none;
     border-bottom: 2px solid #49454567 ;
 }
-input:hover{
+.input-register:hover{
     border-color: #fff;
     background-color:rgba(255, 255, 255, 0.1);
     transition: background, 1s, background-color, 1s;
@@ -121,7 +123,23 @@ button:hover{
    color: #fff;
 	transition: background, 1s, background-color, 1s;
 }
-
+/* .placehold{
+    border-color: bisque;
+    padding: 1rem;
+}
+.input-login{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.formulario-login{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    height: 70vh;
+} */
 
 
 
