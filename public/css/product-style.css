@@ -1,12 +1,200 @@
-*{
-    box-sizing: border-box;
+/*background*/
+body{
+    min-height: 100vh;
+    background:#0c192c;
 }
 
 
-header{
-    background-color: aqua;
+.bubbles{
+    position: relative;
+    display: flex;
+    z-index: -100;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even){
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    background: #ff2d75;
+}
+@keyframes animate
+{
+0%{
+    transform: translateY(100vh) scale(0);
+}
+100%{
+    transform: translateY(-10vh) scale(1);
+}
 }
 
+                /*imagen de producto, titulo y boton like*/
+
+
+.name-like{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.name-product{
+    background-color: rgb(119, 119, 119);
+    padding: 3px 12px;
+    border-radius: 15px;
+
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(218, 215, 215);            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+.name-product h3{
+    margin: 0px;
+}
 .like{
     color: red;
+    font-size: 20px;
+    border: none;
+    border-radius: 9px;
+
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    margin: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(218, 215, 215);            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+.like:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.image{
+    width: 40%;
+}
+.image-product{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+
+
+            /* boton de comprar, carrito y precio*/
+
+
+.container-btns-price{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.btn-buy{
+    background-color: rgb(119, 119, 119);
+    padding: 3px 12px;
+    border-radius: 15px;
+    border: none;
+
+
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(218, 215, 215);            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-buy:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+     
+
+.btn-cart{
+    font-size: 20px;
+    background-color: rgb(119, 119, 119);
+    border: none;
+    border-radius: 9px;
+
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    margin: 10px;
+    padding: 8px 14px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(218, 215, 215);            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+.btn-cart:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.price{
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    margin: 10px;
+    padding: 8px 14px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(218, 215, 215);            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+
+    /* descripcion*/
+
+
+.description{
+    margin-bottom: 8%;
+    color: rgb(192, 192, 192);
+}
+
+    /*  recomendations*/
+.title-recom{
+    color: rgb(192, 192, 192);
+}
+.recomendation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.img-rcm{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }
