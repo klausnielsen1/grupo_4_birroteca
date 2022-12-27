@@ -18,3 +18,8 @@ app.get('/login',(req,res)=>{
 app.get('/product',(req,res)=>{
     res.sendFile(path.join(__dirname,'/views/product-detail.html'))
 })
+app.get('/register',(req,res)=>{
+    res.sendFile(path.join(__dirname,'/views/register.html'))
+})
+
+
