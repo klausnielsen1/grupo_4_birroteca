@@ -4,6 +4,7 @@
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #B06AB3, #4568DC);
 }
 .fondo-logo{
@@ -40,13 +41,14 @@ ul{
     border-bottom: 1px solid black;
 }
 .tarjeta{
-    background-color: aliceblue;
-    margin-top: 10px;
+    
+    
     border-top: 1px solid black;
     width: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
     
     
     
@@ -57,6 +59,15 @@ ul{
     
 }
 .contenedor{
-    width: 100%;
-    text-align: center;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+#comprar{
+    border-radius: 10;
+}
+#comprar:hover{
+    background-color: #4568DC;
 }
