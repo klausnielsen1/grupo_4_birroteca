@@ -15,14 +15,30 @@
     <header>
         <div class="fondo-logo">
 
-            <img src="/imagenes/logo.jpg" alt="" class="logo">
+            <img src="/images/logo.jpg" alt="" class="logo">
         </div>
     </header>
     <main>
-        <div class="caja-grande">
+         <div class="caja-grande">
+            <div class="caja-arriba">
+                <p>Producto</p>
+                <p>Precio</p>
+                <p>Cantidad</p>
+                <p>Subtotal</p>
+            </div>
+            <div class="caja-abajo">
+                <p><img src="/images/lata1.jpg" alt="" class="birra"></p>
+                <p>$500</p>
+                <p>6 unidades</p>
+                <p>$3000</p>
+
+            </div>
+         </div>
+
+         <!-- <div class="caja-grande">
             <div class="producto">
                 <p class="texto">Producto</p>
-                <img src="/imagenes/birra.png" alt="" class="birra">
+                <img src="/images/birra.png" alt="" class="birra">
 
             </div>
             <div class="producto">
@@ -37,9 +53,9 @@
                 <p class="texto">Subtotal</p>
                 <p>$3000</p>
             </div>
-        </div>
-        <div>
-            <input type="text" placeholder="Inserte cupon" class="cupon">
+        </div> --> 
+        <div class="contendor-cupon">
+            <input type="text" placeholder="Inserte cupon" class="inserte-cupon">
             <input type="button" value="Aplicar cupon" class="cupon">
 
         </div>
@@ -47,6 +63,7 @@
         <h1>Total del carrito</h1>
 
             <div class="tarjeta">
+                
 
 
 
@@ -62,9 +79,59 @@
                 </div>
 
             </div>
-            <input type="button" name="" id="comprar" value="Comprar">
+            <button  type="submit">Comprar</button>
         </div>
     </main>
+    <footer> 
+        <!--
+        <div class="img-fondo-footer">
+            <img src="/images/portada-trama-negro.jpg" alt="fondo-footer">
+        </div>
+        -->
+        <div class="container-social">
+            <div class="redes-sociales">
+                <p class="columna-izq">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a class="redes" href="https://www.instagram.com">Encontranos en instagram</a>
+                </p><br>
+            </div>
+    
+            <div class="whatsapp">
+                <p class="columna-izq">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a class="redes" href="https://web.whatsapp.com/">Contactanos por whatsapp</a><br>  
+                </p><br>
+            </div>
+
+            <div class="google-maps">
+                <p class="columna-izq">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <a class="redes" href="https://www.google.com.ar/maps">Encontranos en ésta ubicación</a><br>
+                </p><br>
+
+            </div>
+        </div>
+
+        <div class="container-medios">
+            <div class="pagos">
+                <i class="fa-regular fa-credit-card"></i>
+                <p>Aceptamos todos los medios de pago</p><br>
+            </div>
+
+            <div class="envíos">
+                <i class="fa-solid fa-truck"></i>
+                <p>Envíos a todo el país!</p>
+            </div>
+
+        </div>
+
+        <div class="container-imagen">
+            <img class="img-footer" src="/images/logo-footer.jpg" alt="">
+        </div>
+        
+
+    </footer>
+    
 </body>
 
 </html>
