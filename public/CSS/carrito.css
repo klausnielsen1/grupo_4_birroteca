@@ -7,7 +7,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #B06AB3, #4568DC);
 }
-.fondo-logo{
+.header{    
     text-align: center;
     background-color: black;
     border-radius: 10px;
@@ -46,8 +46,12 @@ body{
     flex-direction: column;
     border-radius: 10px;
     background-color: #fff;
-    width: 300px;
+    
 
+}
+.caja-contenedor{
+    width: 40vw;
+    margin: auto;
 }
 
 .tarjeta{

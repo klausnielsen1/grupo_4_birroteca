@@ -1,6 +1,6 @@
 /*******************HEADER************************/
 
-header{
+.header-home{
     background-color: black;
     display:flex;
     justify-content: space-between;
@@ -65,13 +65,14 @@ a.navbar{
 /*******************BODY************************/
 
 body{
-    color:#e1bb80;
-    background-color:#230e0e;
+    
+    background:linear-gradient(to right, #B06AB3, #4568DC);
     /* INTENTO FALLIDO DE IMAGEN DE FONDO
         background-image: url("1080x1920-trama-negro.jpg");
 
     */
 }
+
 
 /*******************MAIN************************/
 
@@ -96,6 +97,7 @@ body{
 /*******************FOOTER************************/
 
 footer{
+    color:#e1bb80;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;

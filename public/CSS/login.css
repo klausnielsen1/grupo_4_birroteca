@@ -19,6 +19,20 @@
 :root {
     --colorTextos: #49454567;
 }
+.fondo-logo{
+    height: 100px;
+    width: auto;
+}
+.header{
+    position: absolute;
+    top: 0;    
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    width: 100vw;
+    height: auto;
+    
+}
 
 *{
     margin: 0;
@@ -27,7 +41,7 @@
 }
 
 body {
-    font-family: 'Roboto'!important;
+    font-family: 'Roboto';
     background: #4568DC;
     background: linear-gradient(to right, #B06AB3, #4568DC);
     margin-top: 50px;
@@ -36,6 +50,12 @@ body {
     align-items: center;
 }
 
+
+
+.logo{
+    max-height: 100%;
+    width: auto;
+}
 
 /* .preset{
     font-family: 'Righteous';
@@ -72,7 +92,7 @@ h2{
 } */
 
 form {
-    
+    font-family: 'Roboto';
     background: #fff;
     padding: 30px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
@@ -80,19 +100,23 @@ form {
 }
 form:hover{
     background:#fff;
-   background-color:rgba(255, 255, 255, 0.1);
-   transition: background, 1s, background-color, 1s;
    box-shadow: none;
    color: #fff;
-   transform: translateY(-20px)
+   
 }
 
 
 .form-text{
+    font-family: 'Roboto';
     position: relative;
     margin: 45px ;
 }
-
+span{
+    font-family: 'Roboto';
+}
+a{
+    font-family: 'Roboto';
+}
 .input{
     background: none;
     color: rgb(14, 13, 13);
@@ -112,6 +136,7 @@ form:hover{
 }
 
 .form-text{
+    text-align: center;
     color: var(--colorTextos);
     font-size: 16px;
     left: 10px;
@@ -155,3 +180,10 @@ button:hover{
     margin: auto;
     height: 70vh;
 } */
+
+.footer-login{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
