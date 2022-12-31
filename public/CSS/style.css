@@ -1,17 +1,17 @@
-@import "carrito.css";
-@import "product-style.css";
-@import "general.css"
+@import "general.css";
+@import "home.css";
+/*
 :root {
     --colorTextos: #49454567;
 }
 
-
+/*
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
 body {
     font-family: 'Roboto';
     background: #4568DC;
@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 
-
+/*
 .preset{
     font-family: 'Righteous';
     height: 650px;

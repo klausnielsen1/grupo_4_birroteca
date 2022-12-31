@@ -1,7 +1,146 @@
-body{
+/*******************HEADER************************/
+
+header{
     background-color: black;
-    font-style:italic;
+    display:flex;
+    justify-content: space-between;
 }
-h1{
-    color: #F4C979;
+
+/*LOGO*/
+.img-logo{
+    width: 10vw;
+    height: 18vh;
+}
+
+.container-img-logo{
+    order: 0;
+}
+
+/*NAVBAR*/
+.main-navbar ul{
+    display: flex;
+    flex-direction: row;
+    order:1;
+    padding-top: 50px;
+}
+li{
+    margin: 5px;
+    padding: 5px;
+}
+a.navbar{
+    color:#e1bb80;
+    text-decoration: none;
+}
+/*ÍCONOS*/
+.fa-user{
+    margin:5px;
+    color:#F3ECC0;
+}
+
+.fa-id-card{
+    margin:5px;
+    color:#F3ECC0;
+}
+
+.fa-cart-shopping{
+    margin:5px;  
+    color:#F3ECC0;
+}
+
+/*BURGER-MENU*/
+.burger-menu{
+    padding-top: 50px;
+    order: -1;
+}
+#hamburguesa{
+    background-color: #e1bb80;
+    color:#230e0e;
+    border: solid 1px black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+/*******************BODY************************/
+
+body{
+    color:#e1bb80;
+    background-color:#230e0e;
+    /* INTENTO FALLIDO DE IMAGEN DE FONDO
+        background-image: url("1080x1920-trama-negro.jpg");
+
+    */
+}
+
+/*******************MAIN************************/
+
+.nombre-producto{
+    font-size: 19px;
+}
+
+.marca-producto{
+    font-size: 16px;
+
+}
+
+.precio{
+    font-size: 18px;
+
+}
+.nombre-merch{
+    font-size: 19px;
+}
+
+
+/*******************FOOTER************************/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    background-color: black;
+}
+ 
+
+a.redes{
+    color:#e1bb80;
+    text-decoration: none;
+}
+.container-social,
+.container-medios,
+.container-imagen{
+    padding: 1%;
+}
+.img-footer{
+    width: 13vw;
+    height: 25vh;
+}
+
+/*ICONOS DE COLUMNA IZQUIERDA*/
+.fa-instagram{
+    color:#E751B8;
+    font-size: 24px;
+}
+.fa-whatsapp{
+    color:#1EA91E;
+    font-size: 24px;
+}
+.fa-location-dot{
+    color:red;
+    font-size: 25px;
+}
+.fa-credit-card{
+    color:#2727F0;
+    font-size: 24px;
+}
+.fa-truck{
+    color:#E7CC51;
+    font-size: 24px;
+}
+
+.fa-credit-card,
+.fa-truck{
+    align-items: center;
 }
