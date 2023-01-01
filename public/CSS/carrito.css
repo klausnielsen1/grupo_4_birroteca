@@ -14,19 +14,25 @@ body{
 }
 
 .caja-grande{
+    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     text-align: center;
+    border: 2px solid white;
     
 }
 .caja-arriba{
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 10px 0px 10px;
+    text-align: center;
    
 }
 .caja-abajo{
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     border-top: 2px solid white;
@@ -90,6 +96,12 @@ body{
     font-size: 16px;
     cursor: pointer;
 }
+.boton-pagar{
+    display: flex;
+    flex-direction: row;
+    margin   10px;
+    
+}
 button{
     font-family: 'roboto';
     background: #4568DC;
@@ -103,6 +115,7 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
+
 button:hover{
    background:#4568DC;
    background-color: #B06AB3;
