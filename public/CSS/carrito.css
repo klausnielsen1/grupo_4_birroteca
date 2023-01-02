@@ -99,7 +99,7 @@ body{
 .boton-pagar{
     display: flex;
     flex-direction: row;
-    margin   10px;
+    margin-left: 5px;
     
 }
 button{
