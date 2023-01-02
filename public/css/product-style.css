@@ -75,6 +75,7 @@ body{
 .fa-house{
     font-size: 27px;
     margin-bottom: 8px;
+    color: rgb(167, 144, 250);
 }
 .navbar{
     color: rgb(167, 144, 250);
@@ -146,6 +147,9 @@ body{
     margin-top: 8%;
     margin-bottom: 8%;
 }
+.container-btns-price a{
+    text-decoration: none;
+}
 .btn-buy{
     background-color: rgb(119, 119, 119);
     padding: 3px 12px;
@@ -161,7 +165,7 @@ body{
     transition: 0.5s;
     background-size: 200% auto;
     color: rgb(218, 215, 215);            
-    box-shadow: 0 0 20px #eee;
+    
     border-radius: 10px;
     display: block;
 }
@@ -187,7 +191,7 @@ body{
     transition: 0.5s;
     background-size: 200% auto;
     color: rgb(218, 215, 215);            
-    box-shadow: 0 0 20px #eee;
+    
     border-radius: 10px;
     display: block;
 }
@@ -205,7 +209,7 @@ body{
     transition: 0.5s;
     background-size: 200% auto;
     color: rgb(218, 215, 215);            
-    box-shadow: 0 0 20px #eee;
+    
     border-radius: 10px;
     display: block;
 }
@@ -259,8 +263,8 @@ body{
       /* footer*/
       .footer {
         padding:30px 0;
-        background-color:#fff;
-        color:#4b4c4d;
+        background-color:rgb(39, 39, 39);
+        color:#cccccc;
       }
       
       .footer h3 {
@@ -337,4 +341,8 @@ body{
         margin-left:-70%;
     }
    
+}
+
+@media screen and (min-width: 640px){
+    
 }
