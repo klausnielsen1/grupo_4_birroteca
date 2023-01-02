@@ -187,7 +187,7 @@ button:hover{
 
 .footer-login{
     position: absolute;
-    bottom: 0;
+    bottom: 0vw;
     width: 100vw;
     text-align: center;
 }
