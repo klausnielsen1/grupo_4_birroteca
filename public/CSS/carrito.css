@@ -7,67 +7,105 @@ body{
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #B06AB3, #4568DC);
 }
-.fondo-logo{
+.header{    
     text-align: center;
     background-color: black;
     border-radius: 10px;
 }
-li{
-    list-style: none;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .caja-grande{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
     
+}
+.caja-arriba{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    padding: 0px 10px 0px 10px;
+   
 }
-.categorias{
-    border-bottom: 1px solid black;
+.caja-abajo{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid white;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
 }
+
 .birra{
     height: 100px;
     width: auto;
+    box-shadow: 0 0 6px 0 rgba(32, 31, 31, 0.8);
+    border-radius: 5px;
 }
-.producto{
-    padding: 10px;
+.contenedor{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    
+
 }
-.texto{
-    border-bottom: 1px solid black;
+.caja-contenedor{
+    width: 40vw;
+    margin: auto;
 }
+
 .tarjeta{
-    
-    
     border-top: 1px solid black;
     width: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    
-    
-    
-    
+     
+}
+.contenedor-cupon{
+    display: flex;
+    flex-direction: row;
+}
+.inserte-cupon{
+    font-family: 'roboto';
+    background: #4568DC;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px auto;
+    outline: none;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
 }
 .cupon{
-    width: 100px;
-    
+    font-family: 'roboto';
+    background: #4568DC;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
 }
-.contenedor{
-    
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    
+button{
+    font-family: 'roboto';
+    background: #4568DC;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
 }
-#comprar{
-    border-radius: 10;
-}
-#comprar:hover{
-    background-color: #4568DC;
+button:hover{
+   background:#4568DC;
+   background-color: #B06AB3;
+   color: #fff;
+	transition: background, 1s, background-color, 1s;
 }

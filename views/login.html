@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://kit.fontawesome.com/ad3d3e61e2.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
-     
 
-        <form action="/login" method="get"class="form" >
-            <div class="text">
+<body>
+    
+    <div class="header">
+        <header>
+                <div class="fondo-logo">
+                    
+                    <img src="/images/logo.jpg" alt="" class="logo">
+                </div>
+            </header>
+        </div>
+        
+<main>
+
+    <form action="/login" method="get" class="form">
+        <div class="form-text">
+            
+            <div>
                 <input class="input" type="text" placeholder="Nombre de usuario" class="placehold">
             </div>
-            <div class="text">
+            <div>
                 
-                <input class="input"type="password" placeholder="Contraseña" class="placehold">
+                <input class="input" type="password" placeholder="Contraseña" class="placehold">
             </div>
-            <div class="text">
-                <label for="recordar" class="text">Recordar usuario</label>
+            <div>
+                <span>Recordar usuario</span>
                 
-                <input class=""type="checkbox" name="recordar">
+                <input class="" type="checkbox" name="recordar">
             </div>
-            <div class="text">
-                
-                <a href="" class="text">Recuperar contraseña</a>
+            <div>
+
+                <a href="" class="text-a">Recuperar contraseña</a>
             </div>
             
-            <button  href="/" >Volver</a>
-            
+            <button href="/">Iniciar sesion</a>
+        </div>
+
         
-        </form>
+    </form>
+</main>
+    <footer class="footer-login">
+        <div class="container-social">
+            <div class="redes-sociales">
+                <p class="columna-izq">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a class="redes" href="https://www.instagram.com">Encontranos en instagram</a>
+                </p><br>
+            </div>
+
+            <div class="whatsapp">
+                <p class="columna-izq">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a class="redes" href="https://web.whatsapp.com/">Contactanos por whatsapp</a><br>
+                </p><br>
+            </div>
+
+            <div class="google-maps">
+                <p class="columna-izq">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <a class="redes" href="https://www.google.com.ar/maps">Encontranos en ésta ubicación</a><br>
+                </p><br>
+
+            </div>
+        </div>
+
+        <div class="container-medios">
+            <div class="pagos">
+                <i class="fa-regular fa-credit-card"></i>
+                <p>Aceptamos todos los medios de pago</p><br>
+            </div>
+
+            <div class="envíos">
+                <i class="fa-solid fa-truck"></i>
+                <p>Envíos a todo el país!</p>
+            </div>
+
+        </div>
+
+        <div class="container-imagen">
+            <img class="img-footer" src="/images/logo-footer.jpg" alt="">
+        </div>
+
+
+    </footer>
 </body>
+
 </html>

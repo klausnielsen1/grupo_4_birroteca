@@ -6,76 +6,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Document</title>
+
+        <!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <!--FONT-AWESOME-->    
+    <script src="https://kit.fontawesome.com/ad3d3e61e2.js" crossorigin="anonymous"></script>
+
+        <!--ESTILOS-->
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 
 <body>
-    <header>
+    <header class="header-home">
         <!--LOGO-->
-        <div class="img-logo">
-            <img src="/images/logo-header.jpg" alt="logo">
+        <div class="container-img-logo">
+            <img class="img-logo" src="/images/logo-header.jpg" alt="logo">
+        </div>
+
+        <!--MENÚ HAMBURGUESA-->
+        <div class="burger-menu">
+            <i id="hamburguesa" class="fas fa-bars"></i>
         </div>
         <!--NAVBAR-->
         <nav class="main-navbar">
             <ul>
-                <li type="none"><a href="/login">Ingresa</a></li>
-                <li type="none"><a href="/register">Registrate</a></li>
-                <li type="none"><a href="/carrito">Carrito</a></li>
+                <li type="none"><a class="navbar" href="/login">Ingresá</a><i class="fa-solid fa-user"></i></li>                
+
+                <li type="none"><a class="navbar" href="/register">Registrate</a><i class="fa-solid fa-id-card"></i></li>                
+
+                <li type="none"><a class="navbar" href="/carrito">Carrito</a><i class="fa-solid fa-cart-shopping"></i></li>                
             </ul>
         </nav>
 
     </header>
-    <h1>home</h1>
+    <main>
+        <!--
+        <div class="descripción-del-proyecto">
+            <p>
+                Somos un equipo de aficionados de la cerveza artesanal. Éste proyecto comenzó en 2021 con el fin de ofrecer a los consumidores de cerveza artesanal
+                la mejor selección de distintas marcas de Argentina, al mejor precio y en la comodidad de su hogar.
+            </p>
+        </div>
+        -->
 
-    <section class="productos">
-        <article>
-            <div class="img-product">
-                <img src="images/lata.jpg">
+        <section class="productos">
+            <article>
+                <div class="img-product">
+                    <img src="/images/lata.jpg" alt="">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Juego Absurdo</strong>
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $750,00
+                </div>
+            </article>
+            <article>
+                <div class="img-product">
+                    <img src="/images/lata1.jpg">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Alma Gorda</strong>
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $750,00
+                </div>
+            </article>
+            <article>
+                <div class="img-product">
+                    <img src="/images/lata2.jpg">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Agua Bendita</strong> 
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $750,00
+                </div>
+            </article>
+            <article>
+                <div class="img-product">
+                    <img src="/images/lata3.jpg">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Fiesta de Focas Festbier</strong> 
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $750,00
+                </div>
+            </article>
+            <article>
+                <div class="img-product">
+                    <img src="/images/lata4.jpg">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Manos Frescas</strong>
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $750,00
+                </div>
+            </article>
+            <article>
+                <div class="img-product">
+                    <img src="/images/lata5.jpg">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Tiempo de Valientes</strong>  
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $750,00
+                </div>
+            </article>
+        </section>
+        <section class="merch">
+            <article>
+                <div class="img-product">
+                    <img src="/images/merch1.jpg" alt="">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Remera mapache blanca</strong>
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $6000,00
+                </div>
+            </article>
+            <article>
+                <div class="img-product">
+                    <img src="/images/merch2.jpg" alt="">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Remera mapache blanca</strong>
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $6000,00
+                </div>
+            </article>
+            <article>
+                <div class="img-product">
+                    <img src="/images/merch3.jpg" alt="">
+                </div>
+                <p class="nombre-producto">
+                    <strong>Remera mapache negra</strong>
+                </p>
+                <p class="marca-producto">
+                    <em>Strange Brewing</em>
+                </p>
+                <div class="precio">
+                    $6000,00
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer> 
+        <!--
+        <div class="img-fondo-footer">
+            <img src="/images/portada-trama-negro.jpg" alt="fondo-footer">
+        </div>
+        -->
+        <div class="container-social">
+            <div class="redes-sociales">
+                <p class="columna-izq">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a class="redes" href="https://www.instagram.com">Encontranos en instagram</a>
+                </p><br>
             </div>
-            <div class="precio">
-                $750
+    
+            <div class="whatsapp">
+                <p class="columna-izq">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a class="redes" href="https://web.whatsapp.com/">Contactanos por whatsapp</a><br>  
+                </p><br>
             </div>
-        </article>
-        <article>
-            <div class="img-product">
-                <img src="images/lata1.jpg">
+
+            <div class="google-maps">
+                <p class="columna-izq">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <a class="redes" href="https://www.google.com.ar/maps">Encontranos en ésta ubicación</a><br>
+                </p><br>
+
             </div>
-            <div class="precio">
-                $750
+        </div>
+
+        <div class="container-medios">
+            <div class="pagos">
+                <i class="fa-regular fa-credit-card"></i>
+                <p>Aceptamos todos los medios de pago</p><br>
             </div>
-        </article>
-        <article>
-            <div class="img-product">
-                <img src="images/lata2.jpg">
+
+            <div class="envíos">
+                <i class="fa-solid fa-truck"></i>
+                <p>Envíos a todo el país!</p>
             </div>
-            <div class="precio">
-                $750
-            </div>
-        </article>
-        <article>
-            <div class="img-product">
-                <img src="/images/lata3.jpg">
-            </div>
-            <div class="precio">
-                $750
-            </div>
-        </article>
-        <article>
-            <div class="img-product">
-                <img src="/images/lata4.jpg">
-            </div>
-            <div class="precio">
-                $750
-            </div>
-        </article>
-        <article>
-            <div class="img-product">
-                <img src="/images/lata5.jpg">
-            </div>
-            <div class="precio">
-                $750
-            </div>
-        </article>
-    </section>
+
+        </div>
+
+        <div class="container-imagen">
+            <img class="img-footer" src="/images/logo-footer.jpg" alt="">
+        </div>
+        
+
+    </footer>
     
 </body>
 </html>
