@@ -8,15 +8,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+.logo{
+    height: 100px;
+    width: auto;
+}
+.header{
+    position: absolute;
+    top: 0;    
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    width: 99%;
+    height: auto;   
+}
+    
 
 body {
     font-family: 'Roboto';
     background: #4568DC;
     background: linear-gradient(to right, #B06AB3, #4568DC);
-    height: 800px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
 }
 
 
@@ -120,4 +142,10 @@ button:hover{
    background-color: #B06AB3;
    color: #fff;
 	transition: background, 1s, background-color, 1s;
+}
+.footer-register{
+    margin-top: auto;
+    width: 99%;
+    border-radius: 10px;
+    text-align: center;
 }

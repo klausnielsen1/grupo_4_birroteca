@@ -8,14 +8,21 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad3d3e61e2.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/CSS/register.css">
+    <link rel="stylesheet" href="/CSS/home.css">
     
 
 </head>
-<header>
-  
-</header>
-<main>
+<body>
+    <div class="header">
+        <header>
+                 <img src="/images/logo.jpg" alt="" class="logo">
+            </header>
+        </div>
+
+<main class="contenedor">
     <div class="preset">
         <div class="titulo">
             <h1>LA BIRROTECA</h1>
@@ -26,8 +33,6 @@
     </div>
    
 
-</main>
-<body>
     <form action="/" method="post" class="form-register">
         <h2>Registrate!</h2>
         <div class="text">
@@ -50,10 +55,55 @@
             <input class="input" type="password" name="" id="password" required>
             <label for="">Contraseña</label>
         </div>
+        
+        <button type="none" href="/home">Registrarme</button>
+        
+    </form>
+</main>
+    <footer class="footer-register">
+    <div class="container-social">
+        <div class="redes-sociales">
+            <p class="columna-izq">
+                <i class="fa-brands fa-instagram"></i>
+                <a class="redes" href="https://www.instagram.com">Encontranos en instagram</a>
+            </p><br>
+        </div>
 
-        <button href="/views/home.html" type="submit">Enviar</button>
-     
-   </form>
+        <div class="whatsapp">
+            <p class="columna-izq">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a class="redes" href="https://web.whatsapp.com/">Contactanos por whatsapp</a><br>
+            </p><br>
+        </div>
+
+        <div class="google-maps">
+            <p class="columna-izq">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <a class="redes" href="https://www.google.com.ar/maps">Encontranos en ésta ubicación</a><br>
+            </p><br>
+
+        </div>
+    </div>
+
+    <div class="container-medios">
+        <div class="pagos">
+            <i class="fa-regular fa-credit-card"></i>
+            <p>Aceptamos todos los medios de pago</p><br>
+        </div>
+
+        <div class="envíos">
+            <i class="fa-solid fa-truck"></i>
+            <p>Envíos a todo el país!</p>
+        </div>
+
+    </div>
+
+    <div class="container-imagen">
+        <img class="img-footer" src="/images/logo-footer.jpg" alt="">
+    </div>
+
+
+</footer>
 </body>
 </html>
 
