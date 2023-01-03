@@ -1,3 +1,9 @@
+.header{    
+  
+    text-align: center;
+    background-color: black;
+    
+}
 .logo{
     height: 100px;
     width: auto;
@@ -7,11 +13,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #B06AB3, #4568DC);
 }
-.header{    
-    text-align: center;
-    background-color: black;
-    border-radius: 10px;
-}
+
 
 .caja-grande{
     margin-top: 20px;
@@ -67,6 +69,10 @@ body{
     flex-direction: row;
     justify-content: space-between;
      
+}
+input{
+    width: 70px;
+    height: 20px;
 }
 .contenedor-cupon{
     display: flex;
