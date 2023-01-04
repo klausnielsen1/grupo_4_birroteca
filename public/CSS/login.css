@@ -31,6 +31,7 @@
     border-radius: 10px;
     width: 100vw;
     height: auto;
+    margin-bottom: 10vh;
     
 }
 
@@ -49,7 +50,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+main{
+    margin-top: ;
+}
 
 
 .logo{
@@ -191,3 +194,4 @@ button:hover{
     width: 100vw;
     text-align: center;
 }
+
