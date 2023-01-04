@@ -4,8 +4,62 @@
     background-color: black;
     display:flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 98vw;
+}
+.divisor-merch{
+    width: 100%;
+    text-align: center;
+    background-image: url("../images/portada-trama-negro.jpg");
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    
+}
+.productos article a:visited{
+    color: black;
+}
+article a{
+    text-decoration: none;
+
 }
 
+
+article{
+    background-color: white;
+    margin: auto;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    text-align: center;
+
+}
+.merch{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    text-align: center;
+}
+.texto-divisor{
+    z-index: 1;
+    color: #e1bb80;
+
+}
+.imagen-divisor{
+    z-index: 0;
+}
 /*LOGO*/
 .img-logo{
     width: 10vw;
@@ -71,6 +125,30 @@ body{
         background-image: url("1080x1920-trama-negro.jpg");
 
     */
+    
+}
+.contendor-article{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100vw;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+img-product{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: auto;
+}
+
+.imagen{
+    width: 20%;
 }
 
 
@@ -114,7 +192,8 @@ a.redes{
 .container-social,
 .container-medios,
 .container-imagen{
-    padding: 1%;
+    padding:1%;
+
 }
 .img-footer{
     width: 13vw;
