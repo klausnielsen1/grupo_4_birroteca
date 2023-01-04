@@ -3,7 +3,12 @@ const app=express();
 const path=require('path');
 
 let PORT = 3001;
+
+
 app.use(express.static("public"));
+
+
+
 app.listen(PORT,()=>console.log("sevidor funcionando en el servidor"+PORT))
 
 
