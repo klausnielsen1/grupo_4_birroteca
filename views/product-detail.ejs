@@ -1,47 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-    <link rel="stylesheet" href="/css/style.css">
-
-    <script src="https://kit.fontawesome.com/9c8d5d58ab.js" crossorigin="anonymous"></script>
-
-</head>
+    <%- include('./partials/head') %>
 <body>
 
 
+    <%- include('./partials/header') %>
 
-    <header class="header-home">
-
-        <!--NAVBAR-->
-        <nav class="main-navbar">
-
-            <div class="house-nav">
-                <a  href="/"><i class="fa-solid fa-house"></i></a>
-                <ul class="nav-redes">
-                <li type="none"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
-
-                <li type="none"><a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a></li>
-
-                <li type="none"><a href="https://www.google.com.ar/maps"><i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
-            </ul>
-            </div>
-
-            <ul class="container-navbar">
-                <li type="none"><a class="navbar" href="/login">Ingresá</a><i class="fa-solid icon-nav fa-user"></i></li>                
-
-                <li type="none"><a class="navbar" href="/register">Registrate</a><i class="fa-solid icon-nav fa-id-card"></i></li>                
-
-                <li type="none"><a class="navbar" href="/carrito">Carrito</a><i class="fa-solid icon-nav fa-cart-shopping"></i></li>                
-            </ul>
-        </nav>
-            
-    </header>
     
         <div class="bubbles">
             <span style="--i:11"></span>
@@ -144,7 +108,7 @@
 
                     <a href="/carrito"><button class="btn-buy">comprar</button>
 
-                    <a href="/carrito"><button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i></button></a>
+                    <a href="/carrito"><button class="btn-cart-detail"><i class="fa-solid fa-cart-shopping"></i></button></a>
 
                     <p class="price">$320,10</p>
                 </div>
@@ -183,7 +147,7 @@
         </div>
 
     </section>
-
+<!-- 
         <footer class="footer">
             <div class="list-footer">
                 <h3>Mas de Nosotros</h3>
@@ -199,7 +163,9 @@
                 <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                 <p class="copyright">Birroteca © 2022</p>
             </div>
-        </footer>
+        </footer> -->
 
+
+        <%- include('./partials/footer.ejs')  %> 
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+<body class="body-login">
+    
+    <%- include('./partials/header') %>
+        
+<main>
+
+    <form action="/login" method="get" class="form-login">
+        <div class="titulo">
+            <h2>Birroteca</h2>
+        </div>
+        <div class="form-text">
+
+            
+            <div>
+                <input class="input-login" type="text" placeholder="Nombre de usuario" class="placehold">
+            </div>
+            <div>
+                
+                <input class="input-login" type="password" placeholder="Contraseña" class="placehold">
+            </div>
+            <div class="caja-recordar">
+
+                <div>
+                    <span class="span-login">Recordar usuario</span>
+                    
+                    <input class="" type="checkbox" name="recordar">
+                </div>
+                <div>
+                    
+                    <a href="" class="retrieve-password">Recuperar contraseña</a>
+                </div>
+            </div>
+                
+            
+        </div>
+
+        <button class="btn-login" href="/">Iniciar sesion</a>
+    </form>
+</main>
+<%- include('./partials/footer.ejs')  %>
+</body>
+
+</html>

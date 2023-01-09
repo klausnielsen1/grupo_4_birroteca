@@ -1,228 +1,216 @@
-/*******************HEADER************************/
 
-.header-home{
+.body-home {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background:linear-gradient(to right, #B06AB3, #4568DC);
+}
+.tittle-home{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.barra{
+    width:100vw;
+    height: auto;
     background-color: black;
-    display:flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 98vw;
-}
-.divisor-merch{
-    width: 100%;
     text-align: center;
-    background-image: url("../images/portada-trama-negro.jpg");
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    
-}
-.productos article a:visited{
-    color: black;
-}
-article a{
-    text-decoration: none;
+   
 
 }
 
 
-article{
-    background-color: white;
-    margin: auto;
-    width: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-}
-
-.productos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    text-align: center;
-
-}
-.merch{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
+/*.burger{
     text-align: center;
 }
-.texto-divisor{
-    z-index: 1;
-    color: #e1bb80;
-
-}
-.imagen-divisor{
-    z-index: 0;
-}
-/*LOGO*/
-.img-logo{
-    width: 10vw;
-    height: 18vh;
-}
-
-.container-img-logo{
-    order: 0;
-}
-
-/*NAVBAR*/
-.main-navbar ul{
-    display: flex;
-    flex-direction: row;
-    order:1;
-    padding-top: 50px;
-}
-li{
-    margin: 5px;
-    padding: 5px;
-}
-a.navbar{
-    color:#e1bb80;
-    text-decoration: none;
-}
-/*ÍCONOS*/
-.fa-user{
-    margin:5px;
-    color:#F3ECC0;
-}
-
-.fa-id-card{
-    margin:5px;
-    color:#F3ECC0;
-}
-
-.fa-cart-shopping{
-    margin:5px;  
-    color:#F3ECC0;
-}
-
-/*BURGER-MENU*/
-.burger-menu{
-    padding-top: 50px;
-    order: -1;
-}
-#hamburguesa{
-    background-color: #e1bb80;
-    color:#230e0e;
-    border: solid 1px black;
-    font-size: 15px;
+.burger i {
+    background-color: var(--Celeste);
     padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    color: var(--Blanco);
+    font-size: 18px;
+}*/
+
+
+.main-home {
+    
+    margin:auto;
+    margin-top: 20vh;
+    width: 95vw;
+}
+.banner{
+    width: 100%;
+    height: 170px;
+    background-image: url(/images/portada-trama-negro.jpg);
+    color: #e1bb80;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-home h3 {
+    font-size: 24px;
+    text-align: center;
+}
+.main-home section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-home article {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.main-home article a {
+    text-decoration: none;
+}
+.main-home article img {
+    width: 100%;
+}
+
+
+.image-product-home{
+    border-radius: 8px;
+}
+.descripcion {
+    border-top: solid 1px #ebebeb;
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    border-radius: 8px;
+}
+.precio {
+    font-size: 18px;
+    color: black;
+    margin: 0px;
+    padding-right: 10px;
+}
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0px;
+}
+.nombre {
+    font-weight: bold;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0px;
+   
+    position: absolute;
+    bottom: 15px; 
+}
+.product-home{
     border-radius: 8px;
 }
 
 
-/*******************BODY************************/
 
-body{
+
+
+
+
+
+
+@media (min-width: 426px) {
+
+    .barra {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;    
+    }
+    .barra img {
+        max-width: 188px;
+    }
+  
+    .barra p {
+        padding: 0px;
+        text-align: right;
+    }
+
+    .burger {
+        display: none;
+    }
+
+
+    .banner img {
+        margin-top: 120.06px;
+    }
+
+    .main-home article:hover {
+    box-shadow: 0px 0px 10px rgb(44, 42, 42);
+    }
+   
     
-    background:linear-gradient(to right, #B06AB3, #4568DC);
-    /* INTENTO FALLIDO DE IMAGEN DE FONDO
-        background-image: url("1080x1920-trama-negro.jpg");
 
-    */
+  
+    .main-home article {
+        width: 49%;
+    }
+    .descripcion {
+        height: 100px;
+    }
+    .tarjetas-footer {
+        display: flex;
+    }
     
-}
-.contendor-article{
-    display: flex;
-    flex-direction: row;
-    height: 10vh;
-    width: 100vw;
-}
 
-.productos{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 150px;
-}
-
-img-product{
-    display: flex;
-    flex-wrap: wrap;
-    height: 200px;
-    width: auto;
-}
-
-.imagen{
-    width: 20%;
-}
-
-
-
-/*******************MAIN************************/
-
-.nombre-producto{
-    font-size: 19px;
+    .form-register, .form-login {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 120.06px;
+    }
+    .form-login {
+        text-align: center;
+    }
+    .form-login .formu {
+        display: flex;
+        justify-content:center;
+    }
+    
+    .formu {
+        display: flex;
+        justify-content:space-between;
+        align-items: baseline;
+    }
+    .formu label {
+        margin: 0px;
+    }
+    .txt-control {
+     width: 77%;
+    }  
+    .form-register h3 {
+        padding-top: 5px;
+    }
 }
 
-.marca-producto{
-    font-size: 16px;
-
-}
-
-.precio{
-    font-size: 18px;
-
-}
-.nombre-merch{
-    font-size: 19px;
-}
-
-
-/*******************FOOTER************************/
-
-footer{
-    color:#e1bb80;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: center;
-    background-color: black;
-}
- 
-
-a.redes{
-    color:#e1bb80;
-    text-decoration: none;
-}
-.container-social,
-.container-medios,
-.container-imagen{
-    padding:1%;
-
-}
-.img-footer{
-    width: 13vw;
-    height: 25vh;
-}
-
-/*ICONOS DE COLUMNA IZQUIERDA*/
-.fa-instagram{
-    color:#E751B8;
-    font-size: 24px;
-}
-.fa-whatsapp{
-    color:#1EA91E;
-    font-size: 24px;
-}
-.fa-location-dot{
-    color:red;
-    font-size: 25px;
-}
-.fa-credit-card{
-    color:#2727F0;
-    font-size: 24px;
-}
-.fa-truck{
-    color:#E7CC51;
-    font-size: 24px;
-}
-
-.fa-credit-card,
-.fa-truck{
-    align-items: center;
+@media (min-width: 769px) {
+    .main-home article {
+        width: 24%;
+    }
+    nav {
+        font-size: 14px;
+    }
+    .form-register {
+        padding: 20px 250px;
+    }
+    .form-login {
+        padding: 80px 250px;
+    }
+    .txt-control {
+        flex-grow: 1;
+    }
+   .formu {
+    gap: 5px;
+   }
 }

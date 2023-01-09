@@ -1,17 +1,14 @@
+.header{    
+  
+    text-align: center;
+    background-color: black;
+    
+}
 .logo{
     height: 100px;
     width: auto;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #B06AB3, #4568DC);
-}
-.header{    
-    text-align: center;
-    background-color: black;
-    border-radius: 10px;
-}
 
 .caja-grande{
     margin-top: 20px;
@@ -68,6 +65,10 @@ body{
     justify-content: space-between;
      
 }
+#number{
+    width: 70px;
+    height: 20px;
+}
 .contenedor-cupon{
     display: flex;
     flex-direction: row;
@@ -102,7 +103,7 @@ body{
     margin-left: 5px;
     
 }
-button{
+.btn-cart{
     font-family: 'roboto';
     background: #4568DC;
     border: none;
@@ -116,7 +117,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.btn-cart:hover{
    background:#4568DC;
    background-color: #B06AB3;
    color: #fff;

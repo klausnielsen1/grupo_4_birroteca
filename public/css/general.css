@@ -5,3 +5,108 @@
     font-family: 'Nanum Gothic';
     font-style: normal;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+}
+
+
+
+/*header*/
+
+
+
+header { 
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 99vw;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgb(3, 3, 3);
+}
+.logo{
+    text-align: center;
+     width: 100px;
+ 
+ }
+ 
+ .login{
+     margin-left: 0px;
+     padding-left: 0px;
+ }
+ .login li {
+     list-style-type: none;
+ }
+ .login a {
+     text-decoration: none;
+     color:#e1bb80;
+ }
+ .nav-header {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-header ul {
+    display: flex;
+}
+.nav-header ul li {
+    margin: 10px;
+}
+
+
+/*footer*/
+
+
+
+footer{
+    color:#e1bb80;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+    width: 100%;
+}
+ 
+
+a.redes{
+    color:#e1bb80;
+    text-decoration: none;
+}
+.container-social,
+.container-medios,
+.container-imagen{
+    padding:1%;
+
+}
+.img-footer{
+    width: 100%;
+    height: 18vh;
+}
+
+/*ICONOS DE COLUMNA IZQUIERDA*/
+.fa-instagram{
+    color:#E751B8;
+    font-size: 24px;
+}
+.fa-whatsapp{
+    color:#1EA91E;
+    font-size: 24px;
+}
+.fa-location-dot{
+    color:red;
+    font-size: 25px;
+}
+.fa-credit-card{
+    color:#2727F0;
+    font-size: 24px;
+}
+.fa-truck{
+    color:#E7CC51;
+    font-size: 24px;
+}
+
+.fa-credit-card,
+.fa-truck{
+    align-items: center;
+}

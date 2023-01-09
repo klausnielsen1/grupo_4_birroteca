@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partials/head') %>
+
+<body class="body-admin-produ">
+    <%- include('./partials/header') %>
+
+    <section class="section-admin-produ">
+        <h1>Agregar/Modificar producto</h1>
+        <form action="admin-product" method="post">
+
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="category">Categoria:</label>
+            <select name="category" id="category">
+                <option value="cerveza">Cerveza</option>
+                <option value="Merchandisign">Merchandisign</option>
+            </select>
+        
+            <label for="image">Imagen:</label>
+            <input type="image" name="image" id="image">
+
+            <label for="description">Descripcion:</label>
+            <input type="text" name="description" id="description">
+
+            <label for="price">Precio:</label>
+            <input type="number" name="price" id="price">
+
+            <button>Enviar</button>
+
+            <button>Borrar</button>
+
+        </form>
+    </section>
+
+    <%- include('./partials/footer.ejs')  %>
+</body>
+</html>

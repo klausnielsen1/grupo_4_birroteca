@@ -1,0 +1,59 @@
+.body-admin-produ{
+
+}
+.section-admin-produ{
+    margin-top: 230px;
+    background-color: rgb(218, 218, 218, 0.7);
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 160px;
+    margin-left: 22%;
+    margin-right: 22%;
+    border-radius: 18px;
+}
+.section-admin-produ form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.section-admin-produ select{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(236, 236, 236);
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.section-admin-produ input{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(236, 236, 236);
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.section-admin-produ button{
+    border-radius: 15px;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+
+@media screen and (max-width: 420px){
+    .section-admin-produ{
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 270px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .section-admin-produ{
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 220px;
+        margin-bottom: 80px;
+    }
+}

@@ -1,29 +1,21 @@
-:root {
-    --colorTextos: #49454567;
-}
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.logo{
-    height: 100px;
-    width: auto;
-}
-.header{
-    position: absolute;
-    top: 0;    
-    text-align: center;
+.barra{
+    width:100vw;
+    height: auto;
     background-color: black;
-    border-radius: 10px;
-    width: 99%;
-    height: auto;   
-}
-    
+    align-items: center;
+    text-align: center;
+   
 
-body {
+}
+
+.logo{
+   text-align: center;
+    width: 100px;
+
+}
+ 
+.body-register {
     font-family: 'Roboto';
     background: #4568DC;
     background: linear-gradient(to right, #B06AB3, #4568DC);
@@ -71,18 +63,18 @@ body {
 
 
 
-h2{
+.tittle-register{
     text-align: center;
     font-weight: 1000;
 }
 
-form {
+.form-register{
     background: #fff;
     padding: 30px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 }
-form:hover{
+.form-register:hover{
     background:#fff;
    background-color:rgba(255, 255, 255, 0.1);
    transition: background, 1s, background-color, 1s;
@@ -92,12 +84,12 @@ form:hover{
 }
 
 
-form .text{
+.form-register .text{
     position: relative;
     margin: 45px ;
 }
 
-input{
+.input-register{
     background: none;
     color: white;
     border-radius: 5px;
@@ -109,13 +101,13 @@ input{
     outline: none;
     border-bottom: 2px solid #49454567 ;
 }
-input:hover{
+.input-register:hover{
     border-color: #fff;
     background-color:rgba(255, 255, 255, 0.1);
     transition: background, 1s, background-color, 1s;
 }
 
-label .form{
+.label-register .form{
     color: var(--colorTextos);
     font-size: 16px;
     left: 10px;
@@ -124,7 +116,7 @@ label .form{
 
 
 
-button{
+.btn-register{
     font-family: 'roboto';
     background: #4568DC;
     border: none;
@@ -137,7 +129,7 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
-button:hover{
+.btn-register:hover{
    background:#4568DC;
    background-color: #B06AB3;
    color: #fff;

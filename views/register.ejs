@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+
+<body class="body-register">
+
+    <%- include('./partials/header') %> 
+
+<main class="contenedor">
+    <div class="preset">
+        <div class="titulo">
+            <h1 class="tittle-register2">LA BIRROTECA</h1>
+        </div> 
+        <div class="img">
+            <img class="img1" src="/images/sydnyc.jpg" alt="logo">
+        </div> 
+    </div>
+   
+
+    <form action="/" method="post" class="form-register">
+        <h2 class="tittle-register">Registrate!</h2>
+        <div class="text">
+            <input class="input-register"type="text" name="" id="Nombre" required>
+            <label class="label-register" for="">Nombre</label>
+        </div>
+        <div class="text">
+            <input class="input-register" type="text" name="" id="Usuario" required>
+            <label class="label-register" for="">Nombre de Usuario</label>
+        </div>
+        <div class="text">
+            <input class="input-register" type="email" name="" id="email" required>
+            <label class="label-register" for="">Email</label>
+        </div>
+        <div class="text">
+            <input class="input-register"type="date" name="fecha" required>
+            <label class="label-register" for="">Fecha de nacimiento</label>
+        </div>
+        <div class="text">
+            <input class="input-register" type="password" name="" id="password" required>
+            <label class="label-register" for="">Contraseña</label>
+        </div>
+        
+        <button class="btn-register" type="none" href="/home">Registrarme</button>
+        
+    </form>
+</main>
+
+<%- include('./partials/footer.ejs')  %>
+
+</body>
+</html>
+
+   
