@@ -10,4 +10,7 @@ router.get('/carrito',mainController.carrito);
 router.get('/',mainController.index);
 router.get('/admin',mainController.product);
 
+router.get('/create',mainController.create );
+router.get('/products/edit/:id/',mainController.edit);
+
 module.exports = router

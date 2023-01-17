@@ -7,16 +7,26 @@
     <%- include('./partials/header') %>
 
     <section class="section-admin-produ">
-        <h1>Agregar/Modificar producto</h1>
-        <form action="admin-product" method="post">
+        <h1>Estas editando <%=product.nombre %> </h1>
+        <form action="/products/edit/:id?_method=PUT" method="POST">
 
             <label for="name">Nombre:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" value="<%=product.marca %>">
 
             <label for="category">Categoria:</label>
             <select name="category" id="category">
-                <option value="cerveza">Cerveza</option>
-                <option value="Merchandisign">Merchandisign</option>
+                <% if (product.categoria="cerveza") { %>
+                    
+                    <option value="cerveza" selected="selected">Cerveza</option>
+                <% } else {%>
+                    <option value="cerveza">Cerveza</option>
+                <% } %> 
+                <% if (product.categoria="Merchandising") { %>
+                
+                    <option value="cerveza" selected="selected">Merchandising</option>
+                <% } else {%>
+                    <option value="cerveza">Merchandising</option>
+                <% } %>         
             </select>
         
             <label for="image">Imagen:</label>

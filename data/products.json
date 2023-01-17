@@ -1,0 +1,166 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juego absurdo",
+        "marca": "Strange",
+        "imagen": "/images/lata.jpg",
+        "precio": "750$",
+        "estilo": "Lager",
+        "categoria":"cerveza"
+    },
+    {
+        "id": 2,
+        "nombre": "Alma gorda",
+        "marca": "Strange",
+        "imagen": "/images/lata1.jpg",
+        "precio": "$750",
+        "estilo": "Amber-lager",
+        "categoria":"cerveza"
+    },
+    {
+        "id": 3,
+        "nombre": "Agua bendita",
+        "marca": "Strange",
+        "imagen": "/images/lata2.jpg",
+        "precio": "$800",
+        "estilo": "light-lager"
+    },
+    {
+        "id": 4,
+        "nombre": "Fiesta de focas",
+        "marca": "Strange",
+        "imagen": "/images/lata3.jpg",
+        "precio": "$750",
+        "estilo": "fest-bier"
+    },
+    {
+        "id": 5,
+        "nombre": "Manos frescas",
+        "marca": "Strange",
+        "imagen": "/images/lata4.jpg",
+        "precio": "$900",
+        "estilo": "Neipa"
+    },
+    {
+        "id": 6,
+        "nombre": "Tiempo de valientes",
+        "marca": "Strange",
+        "imagen": "",
+        "precio": "$800",
+        "estilo": "IPL"
+    },
+    {
+        "id": 7,
+        "nombre": "Islas flotantes",
+        "marca": "Strange",
+        "imagen": "/images/lata5.jpg",
+        "precio": "$750",
+        "estilo": "IPA"
+    },
+    {
+        "id": 8,
+        "nombre": "Boot",
+        "marca": "Kelwick",
+        "descripcion": "bkelwick7@networksolutions.com",
+        "precio": "Agender",
+        "estilo": "64.224.194.117"
+    },
+    {
+        "id": 9,
+        "nombre": "Lonee",
+        "marca": "Righy",
+        "descripcion": "lrighy8@businessweek.com",
+        "precio": "Female",
+        "estilo": "195.6.78.100"
+    },
+    {
+        "id": 10,
+        "nombre": "Florie",
+        "marca": "Tutchings",
+        "descripcion": "ftutchings9@newsvine.com",
+        "precio": "Female",
+        "estilo": "41.104.53.102"
+    },
+    {
+        "id": 11,
+        "nombre": "Garold",
+        "marca": "Craigg",
+        "descripcion": "gcraigga@accuweather.com",
+        "precio": "Male",
+        "estilo": "35.222.116.158"
+    },
+    {
+        "id": 12,
+        "nombre": "Corabelle",
+        "marca": "Danskine",
+        "descripcion": "cdanskineb@geocities.jp",
+        "precio": "Female",
+        "estilo": "177.242.201.181"
+    },
+    {
+        "id": 13,
+        "nombre": "Tamarah",
+        "marca": "Nurny",
+        "descripcion": "tnurnyc@archive.org",
+        "precio": "Bigender",
+        "estilo": "97.54.14.109"
+    },
+    {
+        "id": 14,
+        "nombre": "Darb",
+        "marca": "Bonsul",
+        "descripcion": "dbonsuld@springer.com",
+        "precio": "Male",
+        "estilo": "202.74.120.84"
+    },
+    {
+        "id": 15,
+        "nombre": "Kellyann",
+        "marca": "Labuschagne",
+        "descripcion": "klabuschagnee@addtoany.com",
+        "precio": "Female",
+        "estilo": "66.54.66.148"
+    },
+    {
+        "id": 16,
+        "nombre": "Kathrine",
+        "marca": "Trematick",
+        "descripcion": "ktrematickf@scribd.com",
+        "precio": "Non-binary",
+        "estilo": "33.58.199.111"
+    },
+    {
+        "id": 17,
+        "nombre": "Emerson",
+        "marca": "Elcome",
+        "descripcion": "eelcomeg@4shared.com",
+        "precio": "Male",
+        "estilo": "36.44.111.51"
+    },
+    {
+        "id": 18,
+        "nombre": "Jody",
+        "marca": "Tregiddo",
+        "descripcion": "jtregiddoh@gov.uk",
+        "precio": "Female",
+        "estilo": "143.107.14.121"
+    },
+    {
+        "id": 19,
+        "nombre": "Maddi",
+        "marca": "Perell",
+        "descripcion": "mperelli@ebay.co.uk",
+        "precio": "Female",
+        "estilo": "178.224.239.62"
+    },
+    {
+        "id": 20,
+        "nombre": "Vonni",
+        "marca": "Grube",
+        "descripcion": "vgrubej@behance.net",
+        "precio": "Female",
+        "estilo": "87.150.164.11"
+    }
+]
+ 
+
