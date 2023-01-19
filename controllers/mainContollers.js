@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-
 const productsFilePath = path.join(__dirname,'../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'));
+const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'))
+
 
 
 module.exports={
@@ -27,6 +27,15 @@ module.exports={
     create: (req,res)=>{
         res.render('product-create')
     },
+    crear: (req,res)=>{
+        const productsFilePath = path.join(__dirname,'../data/products.json');
+        const products = JSON.parse(fs.readFileSync(productsFilePath));
+        products.push(req.body);
+        const newProducts = JSON.stringify(products);
+        fs.writeFileSync(path.join(__dirname,'../data/products.json'),newProducts);
+        res.redirect('/')
+    },
+
     edit: (req,res)=>{
         let id = req.params.id;
         let product = products.find(product=>product.id==id);

@@ -11,6 +11,7 @@ router.get('/',mainController.index);
 router.get('/admin',mainController.product);
 
 router.get('/create',mainController.create );
+router.post('/create',mainController.crear)
 
 
 router.get('/products/edit/:id/',mainController.edit);
