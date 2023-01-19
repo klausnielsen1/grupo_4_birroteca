@@ -97,7 +97,7 @@
                 <div class="name-like">
 
                     <div class="container-name-product">
-                        <h3 class="name-product">Alma Gorda</h3>
+                        <h3 class="name-product"><%= product.nombre %> </h3>
                     </div>
 
                     <button class="like"><i class="fa-solid fa-heart-circle-plus"></i></button>
@@ -110,23 +110,24 @@
 
                     <a href="/carrito"><button class="btn-cart-detail"><i class="fa-solid fa-cart-shopping"></i></button></a>
 
-                    <p class="price">$320,10</p>
+                    <p class="price"> <%= product.precio %> </p>
                 </div>
             
 
             
-                <img class="image image-product" src="images/lata1.jpg" alt="">
+                <img class="image image-product" src="<%= product.imagen %> " alt="">
             
         </div>
         <div class="description">
             <h3 class="title-desc">descripcion:</h3>
 
-            <p>Alma Gorda Czech Amber Lager - Strange Brewing: <br> <br>
-            Exuberante delicia checa. Inconfundible sabor a la corteza del pan recién horneado y un carácter lupulado tan herbal como fresco. 
+            <p><%= product.nombre %> </p>
+                <br> <br>
+            
+                <p><%= product.descripcion %> </p> 
+            
             <br><br>
-            Crocante, sequita, maltosa y acaramelada. 
-            <br><br>
-            Alc 4.8%</p>
+            <p>Alc 4.8%</p>
         </div>
 
         <h3 class="title-recom">recomendados</h3>

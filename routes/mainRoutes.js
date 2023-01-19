@@ -4,17 +4,21 @@ const mainController=require('../controllers/mainContollers')
 
 
 router.get('/login',mainController.login);
-router.get('/product',mainController.detail);
+router.get('/products',mainController.index);
 router.get('/register',mainController.register);
 router.get('/carrito',mainController.carrito);
 router.get('/',mainController.index);
 router.get('/admin',mainController.product);
 
-router.get('/create',mainController.create );
-router.post('/create',mainController.crear)
+router.get('/products/create',mainController.create );
 
 
-router.get('/products/edit/:id/',mainController.edit);
-router.put('/products/edit/:id/',mainController.update);
+
+
+router.get('/products/:id/edit',mainController.edit);
+router.put('/products/:id',mainController.update);
+
+router.get('/products/:id',mainController.detail );
+router.post('/products/create',mainController.crear)
 
 module.exports = router

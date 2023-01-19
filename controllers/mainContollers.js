@@ -19,7 +19,9 @@ module.exports={
         res.render('carrito')
     },
     detail: (req,res)=>{
-        res.render('product-detail')
+        let id = req.params.id;
+        let product = products.find(product=>product.id==id);
+        res.render('product-detail', {product});
     },
     product: (req,res)=>{
         res.render('admin-product')

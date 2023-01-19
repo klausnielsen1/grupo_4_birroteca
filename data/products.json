@@ -6,8 +6,8 @@
         "imagen": "/images/lata.jpg",
         "precio": "750$",
         "estilo": "Lager",
-        "categoria":"cerveza",
-        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
+        "categoria": "cerveza",
+        "descripcion": "Es una birra primaveral: huele como IPA y se bebe como lager. Ligerita, refrescante y sabrosa."
     },
     {
         "id": 2,
@@ -16,8 +16,8 @@
         "imagen": "/images/lata1.jpg",
         "precio": "$750",
         "estilo": "Amber-lager",
-        "categoria":"cerveza",
-        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
+        "categoria": "cerveza",
+        "descripcion": "Exuberante delicia checa. Inconfundible sabor a la corteza del pan recién horneado y un carácter lupulado tan herbal como fresco."
     },
     {
         "id": 3,
@@ -26,8 +26,8 @@
         "imagen": "/images/lata2.jpg",
         "precio": "$800",
         "estilo": "light-lager",
-        "categoria":"cerveza",
-        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
+        "categoria": "cerveza",
+        "descripcion": "Liviana como una nubecita. Refrescante como el agua. Suave al paladar debido a su amargor bajo. Creada para sanar cualquier mal. Hecha para combatir todos los calores"
     },
     {
         "id": 4,
@@ -36,8 +36,8 @@
         "imagen": "/images/lata3.jpg",
         "precio": "$750",
         "estilo": "fest-bier",
-        "categoria":"cerveza",
-        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
+        "categoria": "cerveza",
+        "descripcion": "Una Helles con un extra de fiesta. Rubia, cristalina, maltosa; notas a pan y miel. Si estuvieses en el Oktoberfest, ésta sería tu mamadera."
     },
     {
         "id": 5,
@@ -46,8 +46,8 @@
         "imagen": "/images/lata4.jpg",
         "precio": "$900",
         "estilo": "Neipa",
-        "categoria":"cerveza",
-        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
+        "categoria": "cerveza",
+        "descripcion": "La New England Pale Ale del momento. Luciendo los lúpulos Talus & Citra, este dúo dinámico y suculento les dejará los ojitos bien abiertos. De perfil súper fresco, con notas a frutas blancas y amarillas."
     },
     {
         "id": 6,
@@ -56,8 +56,8 @@
         "imagen": "",
         "precio": "$800",
         "estilo": "IPL",
-        "categoria":"cerveza",
-        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
+        "categoria": "cerveza",
+        "descripcion": "India Pale Lager con lúpulo Columbus, Cascade, Simcoe y Mosaic. Por estos extraños tiempos de valientes."
     },
     {
         "id": 7,
@@ -66,8 +66,8 @@
         "imagen": "/images/lata5.jpg",
         "precio": "$750",
         "estilo": "IPA",
-        "categoria":"cerveza",
-        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
+        "categoria": "cerveza",
+        "descripcion": "New IPA on the block. Color oro, pues es cerca de ser oro líquido. Cítrica. Crujiente. Resinosa. Prueben y vean por sí mismos."
     },
     {
         "id": 8,
@@ -77,7 +77,6 @@
         "precio": "$6.700",
         "estilo": "",
         "categoria": "merchandising"
-
     },
     {
         "id": 9,
@@ -175,7 +174,12 @@
         "descripcion": "vgrubej@behance.net",
         "precio": "Female",
         "estilo": "87.150.164.11"
+    },
+    {
+        "name": "dcdcdc",
+        "category": "cerveza",
+        "image": "",
+        "description": "vfevfevf",
+        "price": "5455"
     }
 ]
- 
-
