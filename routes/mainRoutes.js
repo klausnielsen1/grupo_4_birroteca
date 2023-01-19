@@ -11,6 +11,9 @@ router.get('/',mainController.index);
 router.get('/admin',mainController.product);
 
 router.get('/create',mainController.create );
+
+
 router.get('/products/edit/:id/',mainController.edit);
+router.put('/products/edit/:id/',mainController.update);
 
 module.exports = router

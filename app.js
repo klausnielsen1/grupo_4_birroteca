@@ -5,7 +5,7 @@ const mainRouter=require('./routes/mainRoutes');
 const methodOverride=require('method-override');
 
 
-
+app.use(express.urlencoded({extended:false}));
 app.use(methodOverride('_method'));
 app.use(express.static("public"));
 app.set('view engine','ejs');

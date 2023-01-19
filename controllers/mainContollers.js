@@ -32,8 +32,30 @@ module.exports={
         let product = products.find(product=>product.id==id);
         res.render('product-edit',{product});
 
-    }
+    },
+    update: (req,res)=>{
+        let id = req.params.id;
+        let product = products.find(product=>product.id==id);
+        let productToEdit = {
 
+            nombre :req.body.name,
+            categoria :req.body.category,
+            imagen: req.body.image,
+            descripcion: req.body.description,
+            precio: req.body.price
+        }
+        console.log(productUpdate);
+        let newProduct = products.map(product=>{
+
+            if(product.id==id){
+                return product = {...productToEdit}
+            }
+            return products
+        })
+        
+        res.redirect('/')
+
+    }
 
 
 

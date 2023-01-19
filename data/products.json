@@ -6,7 +6,8 @@
         "imagen": "/images/lata.jpg",
         "precio": "750$",
         "estilo": "Lager",
-        "categoria":"cerveza"
+        "categoria":"cerveza",
+        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "imagen": "/images/lata1.jpg",
         "precio": "$750",
         "estilo": "Amber-lager",
-        "categoria":"cerveza"
+        "categoria":"cerveza",
+        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
     },
     {
         "id": 3,
@@ -23,7 +25,9 @@
         "marca": "Strange",
         "imagen": "/images/lata2.jpg",
         "precio": "$800",
-        "estilo": "light-lager"
+        "estilo": "light-lager",
+        "categoria":"cerveza",
+        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
     },
     {
         "id": 4,
@@ -31,7 +35,9 @@
         "marca": "Strange",
         "imagen": "/images/lata3.jpg",
         "precio": "$750",
-        "estilo": "fest-bier"
+        "estilo": "fest-bier",
+        "categoria":"cerveza",
+        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
     },
     {
         "id": 5,
@@ -39,7 +45,9 @@
         "marca": "Strange",
         "imagen": "/images/lata4.jpg",
         "precio": "$900",
-        "estilo": "Neipa"
+        "estilo": "Neipa",
+        "categoria":"cerveza",
+        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
     },
     {
         "id": 6,
@@ -47,7 +55,9 @@
         "marca": "Strange",
         "imagen": "",
         "precio": "$800",
-        "estilo": "IPL"
+        "estilo": "IPL",
+        "categoria":"cerveza",
+        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
     },
     {
         "id": 7,
@@ -55,23 +65,28 @@
         "marca": "Strange",
         "imagen": "/images/lata5.jpg",
         "precio": "$750",
-        "estilo": "IPA"
+        "estilo": "IPA",
+        "categoria":"cerveza",
+        "descripcion":"Crocante, sequita, maltosa y acaramelada. Alc 4.8%"
     },
     {
         "id": 8,
-        "nombre": "Boot",
-        "marca": "Kelwick",
-        "descripcion": "bkelwick7@networksolutions.com",
-        "precio": "Agender",
-        "estilo": "64.224.194.117"
+        "nombre": "Merch Animal con peluca",
+        "marca": "Merch Animal con peluca",
+        "descripcion": "",
+        "precio": "$6.700",
+        "estilo": "",
+        "categoria": "merchandising"
+
     },
     {
         "id": 9,
-        "nombre": "Lonee",
-        "marca": "Righy",
+        "nombre": "Merch STRANGE",
+        "marca": "Merch STRANGE",
         "descripcion": "lrighy8@businessweek.com",
-        "precio": "Female",
-        "estilo": "195.6.78.100"
+        "precio": "$7.500",
+        "estilo": "195.6.78.100",
+        "categoria": "merchandising"
     },
     {
         "id": 10,
