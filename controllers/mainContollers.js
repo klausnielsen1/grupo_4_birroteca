@@ -66,10 +66,16 @@ module.exports={
         
         res.redirect('/')
 
-    }
+    },
+    delete: (req,res)=>{
+        let id = req.params.id;
+        let indice = products.findIndex(product=>product.id==id);
+        
+        if (indice => 0) {
+            products.splice(indice, 1)
+        }
 
-
-
+    },
 
 
 
