@@ -71,32 +71,43 @@
     },
     {
         "id": 8,
-        "nombre": "Merch Animal con peluca",
-        "marca": "Merch Animal con peluca",
-        "descripcion": "",
-        "precio": "$6.700",
-        "estilo": "",
-        "categoria": "merchandising"
+        "nombre": "Baya, no más",
+        "marca": "Strange",
+        "imagen": "/images/lata8.jpg",
+        "precio": "$990",
+        "estilo": "SOUR",
+        "categoria": "cerveza",
+        "descripcion": "Una Sour de frutillas y coco. De apariencia turbia, rosada y cremosa. Pero a no dejarse engañar, porque en boca es fresca como un heladito y apenas lo suficientemente ácida."
     },
     {
         "id": 9,
-        "nombre": "Merch STRANGE",
-        "marca": "Merch STRANGE",
-        "descripcion": "lrighy8@businessweek.com",
-        "precio": "$7.500",
-        "estilo": "195.6.78.100",
-        "categoria": "merchandising"
+        "nombre": "Merch mapache con peluca",
+        "marca": "Strange",
+        "imagen": "/images/merch1.jpg",
+        "precio": "$6.700",
+        "categoria": "merchandising",
+        "descripcion": "Remera 100% algodón con estampa."
     },
     {
         "id": 10,
-        "nombre": "Florie",
-        "marca": "Tutchings",
-        "descripcion": "ftutchings9@newsvine.com",
-        "precio": "Female",
-        "estilo": "41.104.53.102"
+        "nombre": "Merch mapache",
+        "marca": "Strange",
+        "imagen": "/images/merch2.jpg",
+        "precio": "$6.700",
+        "categoria": "merchandising",
+        "descripcion": "Remera 100% algodón con estampa."
     },
     {
         "id": 11,
+        "nombre": "Merch mapache y perrito",
+        "marca": "Strange",
+        "imagen": "/images/merch3.jpg",
+        "precio": "$6.700",
+        "categoria": "merchandising",
+        "descripcion": "Remera 100% algodón con estampa."
+    },
+    {
+        "id": 12,
         "nombre": "Garold",
         "marca": "Craigg",
         "descripcion": "gcraigga@accuweather.com",
@@ -104,7 +115,7 @@
         "estilo": "35.222.116.158"
     },
     {
-        "id": 12,
+        "id": 13,
         "nombre": "Corabelle",
         "marca": "Danskine",
         "descripcion": "cdanskineb@geocities.jp",
@@ -112,7 +123,7 @@
         "estilo": "177.242.201.181"
     },
     {
-        "id": 13,
+        "id": 14,
         "nombre": "Tamarah",
         "marca": "Nurny",
         "descripcion": "tnurnyc@archive.org",
@@ -120,7 +131,7 @@
         "estilo": "97.54.14.109"
     },
     {
-        "id": 14,
+        "id": 15,
         "nombre": "Darb",
         "marca": "Bonsul",
         "descripcion": "dbonsuld@springer.com",
@@ -128,7 +139,7 @@
         "estilo": "202.74.120.84"
     },
     {
-        "id": 15,
+        "id": 16,
         "nombre": "Kellyann",
         "marca": "Labuschagne",
         "descripcion": "klabuschagnee@addtoany.com",
@@ -136,7 +147,7 @@
         "estilo": "66.54.66.148"
     },
     {
-        "id": 16,
+        "id": 17,
         "nombre": "Kathrine",
         "marca": "Trematick",
         "descripcion": "ktrematickf@scribd.com",
@@ -144,7 +155,7 @@
         "estilo": "33.58.199.111"
     },
     {
-        "id": 17,
+        "id": 18,
         "nombre": "Emerson",
         "marca": "Elcome",
         "descripcion": "eelcomeg@4shared.com",
@@ -152,7 +163,7 @@
         "estilo": "36.44.111.51"
     },
     {
-        "id": 18,
+        "id": 19,
         "nombre": "Jody",
         "marca": "Tregiddo",
         "descripcion": "jtregiddoh@gov.uk",
@@ -160,7 +171,7 @@
         "estilo": "143.107.14.121"
     },
     {
-        "id": 19,
+        "id": 20,
         "nombre": "Maddi",
         "marca": "Perell",
         "descripcion": "mperelli@ebay.co.uk",
@@ -168,7 +179,7 @@
         "estilo": "178.224.239.62"
     },
     {
-        "id": 20,
+        "id": 21,
         "nombre": "Vonni",
         "marca": "Grube",
         "descripcion": "vgrubej@behance.net",
@@ -181,19 +192,5 @@
         "image": "",
         "description": "vfevfevf",
         "price": "5455"
-    },
-    {
-        "name": "kjknjknjkn",
-        "category": "cerveza",
-        "image": "",
-        "description": "jhbhjbhjbjb",
-        "price": "454"
-    },
-    {
-        "name": "bnjnjk",
-        "category": "cerveza",
-        "image": "",
-        "description": "jnjikn",
-        "price": "7845"
     }
 ]
