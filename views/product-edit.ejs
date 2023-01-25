@@ -8,10 +8,10 @@
 
     <section class="section-admin-produ">
         <h1>Estas editando <%=product.nombre %> </h1>
-        <form action="/products/edit/<%=product.id%>?_method=PUT" method="POST">
+        <form action="/products/<%=product.id%>/edit?_method=PUT" method="POST">
 
             <label for="name">Nombre:</label>
-            <input type="text" name="name" id="name" value="<%=product.marca %>">
+            <input type="text" name="name" id="name" value="<%=product.nombre %>">
 
             <label for="category">Categoria:</label>
             <select name="category" id="category">
@@ -28,9 +28,14 @@
                     <option value="cerveza">Merchandising</option>
                 <% } %>         
             </select>
-        
+            <label for="estilo">Estilo:</label>
+            <input type="text" name="estilo" id="estilo" value="<%= product.estilo %> ">
+
+            <label for="marca">Marca:</label>
+            <input type="text" name="marca" id="marca" value="<%= product.marca %> ">
+
             <label for="image">Imagen:</label>
-            <input type="file" name="image" id="image">
+            <input type="file" name="image" id="image" value="<%= product.imagen %> ">
 
             <label for="description">Descripcion:</label>
             <input type="text" name="description" id="description" value="<%=product.descripcion %> ">

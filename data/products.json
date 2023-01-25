@@ -1,23 +1,22 @@
 [
     {
-        "id": 1,
-        "nombre": "Juego absurdo",
-        "marca": "Strange",
+        "id": "1",
         "imagen": "/images/lata.jpg",
-        "precio": "750$",
-        "estilo": "Lager",
+        "marca": "Strange",
+        "estilo": " light lager",
+        "nombre": "Juego absurdo",
         "categoria": "cerveza",
-        "descripcion": "Es una birra primaveral: huele como IPA y se bebe como lager. Ligerita, refrescante y sabrosa."
+        "descripcion": "Es una birra primaveral: huele como IPA y se bebe como lager. Ligerita, refrescante y sabrosa.   ",
+        "precio": "900$   "
     },
     {
-        "id": 2,
+        "id": "2",
+        "estilo": "Amber-lager ",
+        "marca": "Strange ",
         "nombre": "Alma gorda",
-        "marca": "Strange",
-        "imagen": "/images/lata1.jpg",
-        "precio": "$750",
-        "estilo": "Amber-lager",
         "categoria": "cerveza",
-        "descripcion": "Exuberante delicia checa. Inconfundible sabor a la corteza del pan recién horneado y un carácter lupulado tan herbal como fresco."
+        "descripcion": "Exuberante delicia checa. Inconfundible sabor a la corteza del pan recién horneado y un carácter lupulado tan herbal como fresco. ",
+        "precio": "$800"
     },
     {
         "id": 3,

@@ -16,7 +16,7 @@ router.get('/products/create',mainController.create );
 
 
 router.get('/products/:id/edit',mainController.edit);
-router.put('/products/:id',mainController.update);
+router.put('/products/:id/edit',mainController.update);
 
 router.get('/products/:id',mainController.detail );
 router.post('/products/create',mainController.crear)

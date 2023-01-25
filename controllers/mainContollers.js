@@ -48,21 +48,25 @@ module.exports={
         let id = req.params.id;
         let product = products.find(product=>product.id==id);
         let productToEdit = {
-
+            id,
+            estilo: req.body.estilo,
+            marca: req.body.marca,
             nombre :req.body.name,
             categoria :req.body.category,
-            imagen: req.body.image,
+            imagen: req.body.imagen,
             descripcion: req.body.description,
             precio: req.body.price
         }
-        console.log(productUpdate);
-        let newProduct = products.map(product=>{
+        
+        let newProducts = products.map(product=>{
 
             if(product.id==id){
                 return product = {...productToEdit}
             }
-            return products
+            return product
         })
+        
+        fs.writeFileSync(path.join(__dirname,'../data/products.json'),JSON.stringify(newProducts));
         
         res.redirect('/')
 
