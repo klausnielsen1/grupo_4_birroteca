@@ -7,7 +7,9 @@ const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'))
 
 module.exports={
     index: (req,res)=>{
-        res.render('home')
+        //let id = req.params.id;
+        res.render('home', {productos: products}); //el de la derecha es products de json, 
+        //el de la izquierda es el alias con el que lo llamamos desde la vista. 
     },
     login: (req,res)=>{
         res.render('login')

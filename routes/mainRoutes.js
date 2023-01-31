@@ -4,10 +4,15 @@ const mainController=require('../controllers/mainContollers')
 
 
 router.get('/login',mainController.login);
+
 router.get('/products',mainController.index);
+
 router.get('/register',mainController.register);
+
 router.get('/carrito',mainController.carrito);
+
 router.get('/',mainController.index);
+
 router.get('/admin',mainController.product);
 
 router.get('/products/create',mainController.create );

@@ -11,6 +11,7 @@
     },
     {
         "id": "2",
+        "imagen":"/images/lata1.jpg",
         "estilo": "Amber-lager ",
         "marca": "Strange ",
         "nombre": "Alma gorda",
@@ -50,19 +51,19 @@
     },
     {
         "id": 6,
-        "nombre": "Tiempo de valientes",
+        "nombre": "Rubén Rubí",
         "marca": "Strange",
-        "imagen": "",
-        "precio": "$800",
-        "estilo": "IPL",
+        "imagen": "/images/lata5.jpg",
+        "precio": "$700",
+        "estilo": "SOUR",
         "categoria": "cerveza",
-        "descripcion": "India Pale Lager con lúpulo Columbus, Cascade, Simcoe y Mosaic. Por estos extraños tiempos de valientes."
+        "descripcion": "Es una Sour con frambuesas. Chispeante. Fresca. Ácida. Probiótica."
     },
     {
         "id": 7,
         "nombre": "Islas flotantes",
         "marca": "Strange",
-        "imagen": "/images/lata5.jpg",
+        "imagen": "/images/lata6.jpg",
         "precio": "$750",
         "estilo": "IPA",
         "categoria": "cerveza",
@@ -72,7 +73,7 @@
         "id": 8,
         "nombre": "Baya, no más",
         "marca": "Strange",
-        "imagen": "/images/lata8.jpg",
+        "imagen": "/images/lata7.jpg",
         "precio": "$990",
         "estilo": "SOUR",
         "categoria": "cerveza",
@@ -104,92 +105,5 @@
         "precio": "$6.700",
         "categoria": "merchandising",
         "descripcion": "Remera 100% algodón con estampa."
-    },
-    {
-        "id": 12,
-        "nombre": "Garold",
-        "marca": "Craigg",
-        "descripcion": "gcraigga@accuweather.com",
-        "precio": "Male",
-        "estilo": "35.222.116.158"
-    },
-    {
-        "id": 13,
-        "nombre": "Corabelle",
-        "marca": "Danskine",
-        "descripcion": "cdanskineb@geocities.jp",
-        "precio": "Female",
-        "estilo": "177.242.201.181"
-    },
-    {
-        "id": 14,
-        "nombre": "Tamarah",
-        "marca": "Nurny",
-        "descripcion": "tnurnyc@archive.org",
-        "precio": "Bigender",
-        "estilo": "97.54.14.109"
-    },
-    {
-        "id": 15,
-        "nombre": "Darb",
-        "marca": "Bonsul",
-        "descripcion": "dbonsuld@springer.com",
-        "precio": "Male",
-        "estilo": "202.74.120.84"
-    },
-    {
-        "id": 16,
-        "nombre": "Kellyann",
-        "marca": "Labuschagne",
-        "descripcion": "klabuschagnee@addtoany.com",
-        "precio": "Female",
-        "estilo": "66.54.66.148"
-    },
-    {
-        "id": 17,
-        "nombre": "Kathrine",
-        "marca": "Trematick",
-        "descripcion": "ktrematickf@scribd.com",
-        "precio": "Non-binary",
-        "estilo": "33.58.199.111"
-    },
-    {
-        "id": 18,
-        "nombre": "Emerson",
-        "marca": "Elcome",
-        "descripcion": "eelcomeg@4shared.com",
-        "precio": "Male",
-        "estilo": "36.44.111.51"
-    },
-    {
-        "id": 19,
-        "nombre": "Jody",
-        "marca": "Tregiddo",
-        "descripcion": "jtregiddoh@gov.uk",
-        "precio": "Female",
-        "estilo": "143.107.14.121"
-    },
-    {
-        "id": 20,
-        "nombre": "Maddi",
-        "marca": "Perell",
-        "descripcion": "mperelli@ebay.co.uk",
-        "precio": "Female",
-        "estilo": "178.224.239.62"
-    },
-    {
-        "id": 21,
-        "nombre": "Vonni",
-        "marca": "Grube",
-        "descripcion": "vgrubej@behance.net",
-        "precio": "Female",
-        "estilo": "87.150.164.11"
-    },
-    {
-        "name": "dcdcdc",
-        "category": "cerveza",
-        "image": "",
-        "description": "vfevfevf",
-        "price": "5455"
-    }
+    }  
 ]
