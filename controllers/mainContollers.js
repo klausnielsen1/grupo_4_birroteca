@@ -17,6 +17,16 @@ module.exports={
     register: (req,res)=>{
         res.render('register')
     },
+    postUser: function(req,res){
+        const users= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json')));
+        const userData= req.body;
+    
+        users.push(userData);
+        fs.writeFileSync(path.join(__dirname, '../data/users.json'), JSON.stringify(users), null, ' ');
+    
+        res.redirect('/login')
+    },
+    
     carrito: (req,res)=>{
         res.render('carrito')
     },

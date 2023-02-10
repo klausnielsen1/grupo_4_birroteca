@@ -11,7 +11,7 @@
     },
     {
         "id": "2",
-        "imagen":"/images/lata1.jpg",
+        "imagen": "/images/lata1.jpg",
         "estilo": "Amber-lager ",
         "marca": "Strange ",
         "nombre": "Alma gorda",
@@ -105,5 +105,5 @@
         "precio": "$6.700",
         "categoria": "merchandising",
         "descripcion": "Remera 100% algodón con estampa."
-    }  
+    }
 ]
