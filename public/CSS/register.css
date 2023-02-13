@@ -69,17 +69,17 @@
 }
 
 .form-register{
-    background: #fff;
+    background: #ffffff;
     padding: 30px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 }
 .form-register:hover{
-    background:#fff;
+    background:#ffffff;
    background-color:rgba(255, 255, 255, 0.1);
    transition: background, 1s, background-color, 1s;
    box-shadow: none;
-   color: #fff;
+   color: #000000;
    transform: translateY(-20px)
 }
 
@@ -91,7 +91,7 @@
 
 .input-register{
     background: none;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
     font-size: 18px;
     padding: 2px 10px 5px 5px;
