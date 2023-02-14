@@ -9,7 +9,7 @@
         
 <main>
 
-    <form action="/login" method="get" class="form-login">
+    <form action="/login" method="post" class="form-login">
         <div class="titulo">
             <h2>Birroteca</h2>
         </div>
@@ -17,24 +17,18 @@
 
             
             <div>
-                <input class="input-login" type="text" placeholder="Nombre de usuario" class="placehold">
+                <input class="input-login" type="text" placeholder="Nombre de usuario" class="placehold" name="usuario">
             </div>
 
             <div>                
-                <input class="input-login" type="password" placeholder="Contraseña" class="placehold">
+                <input class="input-login" type="password" placeholder="Contraseña" class="placehold" name ="contraseña">
             </div>
 
             <div>
                 <label for=""> Mantener sesion iniciada</label>
                 <input type="checkbox" name="remember">
             </div>
-            <div class="caja-recordar">
 
-                <div>
-                    <span class="span-login">Recordar usuario</span>
-                    
-                    <input class="" type="checkbox" name="recordar">
-                </div>
                 <div>
                     
                     <a href="" class="retrieve-password">Recuperar contraseña</a>
@@ -44,7 +38,7 @@
             
         </div>
 
-        <button class="btn-login" href="/">Iniciar sesion</a>
+        <button type="submit "class="btn-login">Iniciar sesion</a>
     </form>
 </main>
 <%- include('./partials/footer.ejs')  %>

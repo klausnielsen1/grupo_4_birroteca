@@ -46,5 +46,12 @@
         "email": "klaus.nielsen97@gmail.com",
         "fecha": "2023-03-10",
         "password": "$2a$10$sAlCrkVWUJFpdcRxJJ2KsuBwiBIQcDtWsj8sWquYM56fgm0B/jKUy"
+    },
+    {
+        "nombre": "klaus",
+        "usuario": "klausnielsen",
+        "email": "klaus.nielsen97@gmail.com",
+        "fecha": "2023-02-18",
+        "password": "$2a$10$EmKtmiJWUv3mRS71EzYjUevJfreAIqtBUUYt8.6TedS2gKHLpfUDO"
     }
 ]

@@ -1,3 +1,4 @@
+const express= require('express');
 const fs= require('fs');
 const path= require('path');
 const bcrypt= require('bcryptjs');
@@ -12,7 +13,7 @@ module.exports= {
     postUser: function(req,res){
         const users= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json')));
         
-        
+
         const userData= {
             nombre: req.body.nombre,
             usuario: req.body.usuario,
@@ -35,23 +36,28 @@ module.exports= {
     postLogin: function(req,res){
         const users= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json')));
 
-        const{email,password, remember}= req.body;
+        
+        const userDataLogin = {
+            usuario: req.body.usuario,
+            password: req.body.password,
+            remember: req.body.remember
+        }
 
-        const loggedUser= users.find(user => user.email === email);
+        const loggedUser= users.find(user => user.usuario === userDataLogin.usuario);
 
         if (loggedUser){
-            let isCorrect= bcrypt.compareSync(password, loggedUser.password);
+            let isCorrect= bcrypt.compareSync(userDataLogin.password, loggedUser.password);
 
-            if(!isCorrect){
-                return res.redirect('/users/login');
+            if(isCorrect){
+                return res.redirect('/');
 
             }            
         }else{
-            return res.redirect('/users/login');
+            return res.redirect('/login');
         }
 
         if (remember){
-            res.cookie('email', loggedUser.email, { maxAge: 60 * 60 * 24 * 31 * 1000})
+            res.cookie('usuario', loggedUser.usuario, { maxAge: 60 * 60 * 24 * 31 * 1000})
         }
 
         
