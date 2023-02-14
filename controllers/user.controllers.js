@@ -11,17 +11,21 @@ module.exports= {
 
     postUser: function(req,res){
         const users= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json')));
-        const {email, password}= req.body;
-
+        
+        
         const userData= {
-            email,
-            password: bcrypt.hashSync(password, 10) //hashsync agarra un dato y lo hace ilegible
+            nombre: req.body.nombre,
+            usuario: req.body.usuario,
+            email: req.body.email,
+            fecha: req.body.fecha,
+            password: bcrypt.hashSync(req.body.password, 10) 
+            
         }
     
-        users.push(userData);
-        fs.writeFileSync(path.join(__dirname, '../data/users.json'), JSON.stringify(users), null, ' ');
+        users.push(userData);   
+        fs.writeFileSync(path.join(__dirname, '../data/users.json'), (JSON.stringify(users)));
     
-        res.redirect('/users/login')
+        res.redirect('/login')
     },
 
     getLogin: function(req,res){
@@ -50,7 +54,7 @@ module.exports= {
             res.cookie('email', loggedUser.email, { maxAge: 60 * 60 * 24 * 31 * 1000})
         }
 
-        //se instala: npm i cookie-parser
+        
 
         return res.redirect("/");
     },

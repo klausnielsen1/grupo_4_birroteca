@@ -22,5 +22,29 @@
     },
     {
         "fecha": "2023-02-15"
+    },
+    {
+        "fecha": "2023-02-09"
+    },
+    {
+        "fecha": "2023-03-01"
+    },
+    {
+        "fecha": "2023-03-02",
+        "password": "asdasd"
+    },
+    {
+        "nombre": "asdasd",
+        "usuario": "asd",
+        "email": "klaus.nielsen97@gmail.com",
+        "fecha": "2023-03-04",
+        "password": "asdasd"
+    },
+    {
+        "nombre": "asdasd",
+        "usuario": "asdasd",
+        "email": "klaus.nielsen97@gmail.com",
+        "fecha": "2023-03-10",
+        "password": "$2a$10$sAlCrkVWUJFpdcRxJJ2KsuBwiBIQcDtWsj8sWquYM56fgm0B/jKUy"
     }
 ]

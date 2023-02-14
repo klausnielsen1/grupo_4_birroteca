@@ -17,9 +17,10 @@ app.use(cookieParser());
 app.set('view engine','ejs');
 app.set('views','./views');
 
-app.use('/users', userRouter);
+// app.use('/users', userRouter);
 
 app.use(mainRouter);
+app.use(userRouter);
 
 
 
