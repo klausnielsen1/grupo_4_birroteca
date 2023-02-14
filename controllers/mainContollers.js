@@ -11,21 +11,7 @@ module.exports={
         res.render('home', {productos: products}); //el de la derecha es products de json, 
         //el de la izquierda es el alias con el que lo llamamos desde la vista. 
     },
-    login: (req,res)=>{
-        res.render('login')
-    },
-    register: (req,res)=>{
-        res.render('register')
-    },
-    postUser: function(req,res){
-        const users= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json')));
-        const userData= req.body;
     
-        users.push(userData);
-        fs.writeFileSync(path.join(__dirname, '../data/users.json'), JSON.stringify(users), null, ' ');
-    
-        res.redirect('/login')
-    },
     
     carrito: (req,res)=>{
         res.render('carrito')

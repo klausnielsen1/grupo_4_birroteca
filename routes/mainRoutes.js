@@ -3,13 +3,10 @@ const router = express.Router();
 const mainController=require('../controllers/mainContollers')
 
 
-router.get('/login',mainController.login);
 
-router.get('/products',mainController.index);
 
-router.get('/register',mainController.register);
 
-router.post('/', mainController.postUser);
+
 
 router.get('/carrito',mainController.carrito);
 
