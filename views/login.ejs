@@ -4,45 +4,46 @@
 <%- include('./partials/head') %>
 
 <body class="body-login">
-    
+    <!-- header -->
     <%- include('./partials/header') %>
+
+
+    <main class="main-login">
+
+
+        <form class="form-login" action="/login" method="post">
+
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password">
+
+            
+            <div class="btn-links-login">
+                <button class="btn-send-login">Enviar</button>
+                
+                <div>
+                   <a href="">Olvidaste la Contraseña?</a>
+                   <a href="register">Crea tu cuenta aqui</a>
+                </div>
+                
+            </div>
         
-<main>
-
-    <form action="/login" method="get" class="form-login">
-        <div class="titulo">
-            <h2>Birroteca</h2>
-        </div>
-        <div class="form-text">
-
-            
-            <div>
-                <input class="input-login" type="text" placeholder="Nombre de usuario" class="placehold">
+            <div class="label-sesion-login">
+                <label for="keep-login">mantener sesion iniciada?  <input type="checkbox" name="keep-login" id="keep-login"></label>
             </div>
-            <div>
-                
-                <input class="input-login" type="password" placeholder="Contraseña" class="placehold">
-            </div>
-            <div class="caja-recordar">
 
-                <div>
-                    <span class="span-login">Recordar usuario</span>
-                    
-                    <input class="" type="checkbox" name="recordar">
-                </div>
-                <div>
-                    
-                    <a href="" class="retrieve-password">Recuperar contraseña</a>
-                </div>
-            </div>
-                
-            
-        </div>
+        </form>
 
-        <button class="btn-login" href="/">Iniciar sesion</a>
-    </form>
-</main>
-<%- include('./partials/footer.ejs')  %>
+
+    </main>
+
+
+        
+    <!-- footer -->
+    <%- include('./partials/footer.ejs')  %>
+
 </body>
 
 </html>

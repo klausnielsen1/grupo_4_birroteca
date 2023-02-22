@@ -1,108 +1,53 @@
-
-.barra{
-    width:100vw;
-    height: auto;
-    background-color: black;
-    align-items: center;
-    text-align: center;
-   
-
+.body-login{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.logo{
-   text-align: center;
-    width: 100px;
-}
 
-.body-login {
-    font-family: 'Roboto';
-    background: #4568DC;
-    background: linear-gradient(to right, #B06AB3, #4568DC);
-    margin-top: 50px;
-
-    align-items: center;
+.main-login{
+    padding: auto;
+    margin: auto;
     
 }
-
-.titulo{
-    font-size: 30px;
-    width: 100%;
-    text-align: center;    
+.form-login{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(175, 175, 175, 0.932);
+    padding: 20px 40px 20px 40px;
+    width: 120%;
+    color: rgba(175, 175, 175, 0.932);;
+    background-color: rgba(43, 43, 43, 0.966);
 }
-
-
-
-.form-login {
-    font-family: 'Roboto';
-    background: #fff;
-    padding: 30px 0 ;
-    text-align: center;
-    margin-top: 75px;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+.form-login input{
+    margin-bottom: 10px;
+    border: 1px solid rgba(175, 175, 175, 0.932);
+    background-color: rgba(0,0,0,0.4);
+    color:  rgba(175, 175, 175, 0.932);
 }
+.btn-send-login{
+    border: 1px solid rgba(175, 175, 175, 0.932);
+    margin: auto 0px;
+    padding: 4px 5px;
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(175, 175, 175, 0.932);
+    font-size: 14px;
 
-
-
-.form-text{
-    font-family: 'Roboto';
-    margin: 45px ;
-
-    
-    
 }
-.span-login{
-    font-family: 'Roboto';
+.btn-links-login{
+    display: flex;
+    justify-content: space-between;
 }
-.retrieve-password{
-    font-family: 'Roboto';
+.btn-links-login a{
+text-decoration: none;
+color: rgba(175, 175, 175, 0.932);;
 }
-.input-login{
-    background: none;
-    color: rgb(14, 13, 13);
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 8px 0 8px 0;
-    width: 100%;
-    border: 0;
-    outline: none;
-    border-bottom: 2px solid #49454567 ;
+.btn-links-login div{
+    display: flex;
+    flex-direction: column;
 }
-.input-login:hover{
-    border-color: #fff;
-    background-color:rgba(255, 255, 255, 0.1);
-    transition: background, 1s, background-color, 1s;
-}
-
-.form-text{
-
-    color: var(--colorTextos);
-    font-size: 16px;
-    left: 10px;
-    top: 5px;
-}
-.caja-recordar{
+.label-sesion-login{
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
-
-
-
-.btn-login{
-    background: #4568DC;
-    border: none;
-    border-radius: 10px;
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    color: #fff;
-    height: 40px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.btn-login:hover{
-   background:#4568DC;
-   background-color: #B06AB3;
-   color: #fff;
-	transition: background, 1s, background-color, 1s;
-}
-

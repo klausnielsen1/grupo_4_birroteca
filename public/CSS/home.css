@@ -1,13 +1,32 @@
 
 .body-home {
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    background:linear-gradient(to right, #B06AB3, #4568DC);
+    
+}
+.home-banners{
+    height: 300px;
+    width: auto;
+}
+.home-banners img{
+    width: fit-content;
+    height: 300px;
+    margin: auto;
 }
 .tittle-home{
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    margin-top: 28px;
+    color: rgba(199, 199, 199, 0.932);
     font-weight: bold;
     font-size: 14px;
+
+}
+.line-separator{
+    height: 5px;
+    width: 80vw;
+    border-top: 2px solid rgba(196, 147, 43, 0.87);
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .barra{
     width:100vw;
@@ -19,36 +38,21 @@
 }
 
 
-
-/*.burger{
-    text-align: center;
-}
-.burger i {
-    background-color: var(--Celeste);
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-    color: var(--Blanco);
-    font-size: 18px;
-}*/
-
-
 .main-home {
     
     margin:auto;
-    margin-top: 20vh;
+    margin-top: 30px;
     width: 95vw;
 }
 .banner{
     width: 100%;
-    height: 170px;
-    background-image: url(/images/portada-trama-negro.jpg);
-    color: #e1bb80;
+    height: 50pxpx;
+    color: rgba(199, 199, 199, 0.932);
     font-size: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 .banner h2{
     text-align: center;
@@ -165,33 +169,7 @@
     }
     
 
-    .form-register, .form-login {
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-top: 120.06px;
-    }
-    .form-login {
-        text-align: center;
-    }
-    .form-login .formu {
-        display: flex;
-        justify-content:center;
-    }
-    
-    .formu {
-        display: flex;
-        justify-content:space-between;
-        align-items: baseline;
-    }
-    .formu label {
-        margin: 0px;
-    }
-    .txt-control {
-     width: 77%;
-    }  
-    .form-register h3 {
-        padding-top: 5px;
-    }
+
 }
 
 @media (min-width: 769px) {
@@ -201,16 +179,4 @@
     nav {
         font-size: 14px;
     }
-    .form-register {
-        padding: 20px 250px;
-    }
-    .form-login {
-        padding: 80px 250px;
-    }
-    .txt-control {
-        flex-grow: 1;
-    }
-   .formu {
-    gap: 5px;
-   }
 }

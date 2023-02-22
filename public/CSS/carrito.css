@@ -1,9 +1,4 @@
-.header{    
-  
-    text-align: center;
-    background-color: black;
-    
-}
+
 .logo{
     height: 100px;
     width: auto;
@@ -74,7 +69,6 @@
     flex-direction: row;
 }
 .inserte-cupon{
-    font-family: 'roboto';
     background: #4568DC;
     border: none;
     border-radius: 10px;
@@ -86,7 +80,6 @@
     font-size: 16px;
 }
 .cupon{
-    font-family: 'roboto';
     background: #4568DC;
     color: #fff;
     border: none;
@@ -104,7 +97,6 @@
     
 }
 .btn-cart{
-    font-family: 'roboto';
     background: #4568DC;
     border: none;
     border-radius: 10px;

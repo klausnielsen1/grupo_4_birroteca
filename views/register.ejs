@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
+
+<%- include('./partials/head') %>
 
 <body class="body-register">
+    <!-- header -->
+    <%- include('./partials/header') %>
 
-    <%- include('./partials/header') %> 
 
-<main class="contenedor">
-    <div class="preset">
-        <div class="titulo">
-            <h1 class="tittle-register2">LA BIRROTECA</h1>
-        </div> 
-        <div class="img">
-            <img class="img1" src="/images/sydnyc.jpg" alt="logo">
-        </div> 
-    </div>
-   
+    <main class="main-register">
 
-    <form action="/" method="post" class="form-register">
-        <h2 class="tittle-register">Registrate!</h2>
-        <div class="text">
-            <input class="input-register"type="text" name="" id="Nombre" required>
-            <label class="label-register" for="">Nombre</label>
-        </div>
-        <div class="text">
-            <input class="input-register" type="text" name="" id="Usuario" required>
-            <label class="label-register" for="">Nombre de Usuario</label>
-        </div>
-        <div class="text">
-            <input class="input-register" type="email" name="" id="email" required>
-            <label class="label-register" for="">Email</label>
-        </div>
-        <div class="text">
-            <input class="input-register"type="date" name="fecha" required>
-            <label class="label-register" for="">Fecha de nacimiento</label>
-        </div>
-        <div class="text">
-            <input class="input-register" type="password" name="" id="password" required>
-            <label class="label-register" for="">Contraseña</label>
-        </div>
+
+        <form class="form-register" action="/login" method="post">
+
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="lastname">Apellido:</label>
+            <input type="text" name="lastname" id="lastname">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password">
+
+            
+            <div class="btn-links-register">
+                <button class="btn-send-register">Registrarse</button>
+                
+                <div>
+                   <a href="login">Ya tienes cuenta?</a>
+                </div>
+                
+            </div>
         
-        <button class="btn-register" type="none" href="/home">Registrarme</button>
-        
-    </form>
-</main>
+            <div class="label-sesion-register">
+                <label for="keep-login">mantener sesion iniciada?  <input type="checkbox" name="keep-login" id="keep-login"></label>
+            </div>
 
-<%- include('./partials/footer.ejs')  %>
+        </form>
+
+
+    </main>
+
+
+        
+    <!-- footer -->
+    <%- include('./partials/footer.ejs')  %>
 
 </body>
-</html>
 
+</html>
    
