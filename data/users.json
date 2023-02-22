@@ -1,0 +1,64 @@
+[
+    {
+        "fecha": "2023-02-16"
+    },
+    {
+        "fecha": "2023-02-01"
+    },
+    {
+        "fecha": "2023-02-15"
+    },
+    {
+        "fecha": "2023-02-07"
+    },
+    {
+        "fecha": "2023-02-15"
+    },
+    {
+        "fecha": "2023-02-02"
+    },
+    {
+        "fecha": "2023-02-01"
+    },
+    {
+        "fecha": "2023-02-15"
+    },
+    {
+        "fecha": "2023-02-09"
+    },
+    {
+        "fecha": "2023-03-01"
+    },
+    {
+        "fecha": "2023-03-02",
+        "password": "asdasd"
+    },
+    {
+        "nombre": "asdasd",
+        "usuario": "asd",
+        "email": "klaus.nielsen97@gmail.com",
+        "fecha": "2023-03-04",
+        "password": "asdasd"
+    },
+    {
+        "nombre": "asdasd",
+        "usuario": "asdasd",
+        "email": "klaus.nielsen97@gmail.com",
+        "fecha": "2023-03-10",
+        "password": "$2a$10$sAlCrkVWUJFpdcRxJJ2KsuBwiBIQcDtWsj8sWquYM56fgm0B/jKUy"
+    },
+    {
+        "nombre": "klaus",
+        "usuario": "klausnielsen",
+        "email": "klaus.nielsen97@gmail.com",
+        "fecha": "2023-02-18",
+        "password": "$2a$10$EmKtmiJWUv3mRS71EzYjUevJfreAIqtBUUYt8.6TedS2gKHLpfUDO"
+    },
+    {
+        "nombre": "asdsad",
+        "usuario": "klausnielsen",
+        "email": "klaus.nielsen97@gmail.com",
+        "fecha": "2023-03-02",
+        "password": "$2a$10$xPrUOVDxkSF6yOiCwrseVu4.HIBq80W4D3hJXrU2KFy5/AHMLrFam"
+    }
+]

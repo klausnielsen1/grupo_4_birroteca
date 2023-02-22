@@ -30,6 +30,7 @@
                 
             </div>
         
+<<<<<<< HEAD
             <div class="label-sesion-login">
                 <label for="keep-login">mantener sesion iniciada?  <input type="checkbox" name="keep-login" id="keep-login"></label>
             </div>
@@ -44,6 +45,43 @@
     <!-- footer -->
     <%- include('./partials/footer.ejs')  %>
 
+=======
+<main>
+
+    <form action="/login" method="post" class="form-login">
+        <div class="titulo">
+            <h2>Birroteca</h2>
+        </div>
+        <div class="form-text">
+
+            
+            <div>
+                <input class="input-login" type="text" placeholder="Nombre de usuario" class="placehold" name="usuario">
+            </div>
+
+            <div>                
+                <input class="input-login" type="password" placeholder="Contraseña" class="placehold" name ="contraseña">
+            </div>
+
+            <div>
+                <label for=""> Mantener sesion iniciada</label>
+                <input type="checkbox" name="remember">
+            </div>
+
+                <div>
+                    
+                    <a href="" class="retrieve-password">Recuperar contraseña</a>
+                </div>
+            </div>
+                
+            
+        </div>
+
+        <button type="submit "class="btn-login">Iniciar sesion</a>
+    </form>
+</main>
+<%- include('./partials/footer.ejs')  %>
+>>>>>>> dc4eed2cb737be5c24032721dc4c051368d4f617
 </body>
 
 </html>
