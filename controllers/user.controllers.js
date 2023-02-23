@@ -51,21 +51,18 @@ module.exports= {
             let isCorrect= bcrypt.compareSync(userDataLogin.password, loggedUser.password);
 
             if(isCorrect){
+                req.session.usuarioLogeado = userDataLogin
                 if (userDataLogin.remember){
                     res.cookie('usuario', req.body.usuario, { maxAge: 60 * 60 * 24 * 31 * 1000});
-                    return res.redirect('/')
                 }
+                return res.redirect('/')
 
             }            
         }else{
-            return res.redirect('/login');
+            return res.render('/login');
+            //mostrar errores en la vista
         }
-
-        
-
-        
-        
-    },
+         },
 
 
 }
