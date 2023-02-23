@@ -14,7 +14,7 @@
         <form class="form-login" action="/login" method="post">
 
             <label for="name">Nombre:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="usuario" id="name">
 
             <label for="password">Contraseña:</label>
             <input type="password" name="password" id="password">
@@ -24,31 +24,16 @@
                 <button class="btn-send-login">Enviar</button>
                 
                 <div>
+                    <label for="keep-login">Mantener sesion iniciada?  <input type="checkbox" name="remember" id="remember"></label>
                    <a href="">Olvidaste la Contraseña?</a>
                    <a href="register">Crea tu cuenta aqui</a>
                 </div>
                 
             </div>
-        
-<<<<<<< HEAD
-            <div class="label-sesion-login">
-                <label for="keep-login">mantener sesion iniciada?  <input type="checkbox" name="keep-login" id="keep-login"></label>
-            </div>
-
-        </form>
+    </main>       
 
 
-    </main>
-
-
-        
-    <!-- footer -->
-    <%- include('./partials/footer.ejs')  %>
-
-=======
-<main>
-
-    <form action="/login" method="post" class="form-login">
+    <!-- <form action="/login" method="post" class="form-login">
         <div class="titulo">
             <h2>Birroteca</h2>
         </div>
@@ -78,10 +63,9 @@
         </div>
 
         <button type="submit "class="btn-login">Iniciar sesion</a>
-    </form>
-</main>
+    </form> -->
+
 <%- include('./partials/footer.ejs')  %>
->>>>>>> dc4eed2cb737be5c24032721dc4c051368d4f617
 </body>
 
 </html>

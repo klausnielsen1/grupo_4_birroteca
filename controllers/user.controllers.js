@@ -2,6 +2,7 @@ const express= require('express');
 const fs= require('fs');
 const path= require('path');
 const bcrypt= require('bcryptjs');
+const multer=require('multer')
 
 
 
@@ -26,7 +27,7 @@ module.exports= {
         users.push(userData);   
         fs.writeFileSync(path.join(__dirname, '../data/users.json'), (JSON.stringify(users)));
     
-        res.redirect('/login')
+        res.redirect('/')
     },
 
     getLogin: function(req,res){
@@ -38,31 +39,32 @@ module.exports= {
 
         
         const userDataLogin = {
+            
             usuario: req.body.usuario,
             password: req.body.password,
             remember: req.body.remember
         }
-
+        
         const loggedUser= users.find(user => user.usuario === userDataLogin.usuario);
 
         if (loggedUser){
             let isCorrect= bcrypt.compareSync(userDataLogin.password, loggedUser.password);
 
             if(isCorrect){
-                return res.redirect('/');
+                if (userDataLogin.remember){
+                    res.cookie('usuario', req.body.usuario, { maxAge: 60 * 60 * 24 * 31 * 1000});
+                    return res.redirect('/')
+                }
 
             }            
         }else{
             return res.redirect('/login');
         }
 
-        if (remember){
-            res.cookie('usuario', loggedUser.usuario, { maxAge: 60 * 60 * 24 * 31 * 1000})
-        }
-
         
 
-        return res.redirect("/");
+        
+        
     },
 
 
