@@ -3,7 +3,9 @@
     display: flex;
     flex-direction: column;
 }
-
+.form-error{
+    color: red;
+}
 
 .main-register{
     padding: auto;
@@ -46,105 +48,8 @@ color: rgba(175, 175, 175, 0.932);;
     display: flex;
     flex-direction: column;
 }
-<<<<<<< HEAD
 .label-sesion-register{
     margin-top: 20px;
     display: flex;
     justify-content: center;
-=======
-.titulo{
-    font-size: 30px;
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 15px;
-    text-align: center;    
-}
-
-.img{
-    text-align: center;
-}
-.img1{
-    border-radius: 10px;
-}
-
-
-
-.tittle-register{
-    text-align: center;
-    font-weight: 1000;
-}
-
-.form-register{
-    background: #ffffff;
-    padding: 30px 0;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-}
-.form-register:hover{
-    background:#ffffff;
-   background-color:rgba(255, 255, 255, 0.1);
-   transition: background, 1s, background-color, 1s;
-   box-shadow: none;
-   color: #000000;
-   transform: translateY(-20px)
-}
-
-
-.form-register .text{
-    position: relative;
-    margin: 45px ;
-}
-
-.input-register{
-    background: none;
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 2px 10px 5px 5px;
-    display: block;
-    width: 100%;
-    border: 0;
-    outline: none;
-    border-bottom: 2px solid #49454567 ;
-}
-.input-register:hover{
-    border-color: #fff;
-    background-color:rgba(255, 255, 255, 0.1);
-    transition: background, 1s, background-color, 1s;
-}
-
-.label-register .form{
-    color: var(--colorTextos);
-    font-size: 16px;
-    left: 10px;
-    top: 5px;
-}
-
-
-
-.btn-register{
-    font-family: 'roboto';
-    background: #4568DC;
-    border: none;
-    border-radius: 10px;
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    color: #fff;
-    height: 40px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.btn-register:hover{
-   background:#4568DC;
-   background-color: #B06AB3;
-   color: #fff;
-	transition: background, 1s, background-color, 1s;
-}
-.footer-register{
-    margin-top: auto;
-    width: 99%;
-    border-radius: 10px;
-    text-align: center;
->>>>>>> dc4eed2cb737be5c24032721dc4c051368d4f617
 }
