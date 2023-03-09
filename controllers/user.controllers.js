@@ -3,11 +3,20 @@ const fs= require('fs');
 const path= require('path');
 const bcrypt= require('bcryptjs');
 const multer=require('multer');
-const {validationResult}= require('express-validator')
+const {validationResult}= require('express-validator');
+const db = require('../src/database/models/Usuario');
+
+
 
 
 
 module.exports= {
+    listaUsuarios: function (req,res){
+        db.Usuarios.findAll()
+            .then(function(usuarios){
+                res.render('listadoUsuarios',{usuarios:Usuarios})
+            })
+    },
     getRegister: (req,res)=>{
         res.render('register')
     },

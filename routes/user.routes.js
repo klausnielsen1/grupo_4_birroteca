@@ -33,6 +33,8 @@ router.post('/register', fileUpload.single('imagenUsuario'),validateCreateForm,u
 router.get('/login', userController.getLogin);
 router.post('/login', userController.postLogin);
 
+router.get('/usuarios',userController.listaUsuarios)
+
 
 
 module.exports=router;
