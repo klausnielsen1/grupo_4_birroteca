@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
+
+<%- include('./partials/head') %>
 
 <body class="body-register">
+    <!-- header -->
+    <%- include('./partials/header') %>
 
-    <%- include('./partials/header') %> 
 
-<main class="contenedor">
-    <div class="preset">
-        <div class="titulo">
-            <h1 class="tittle-register2">LA BIRROTECA</h1>
-        </div> 
-        <div class="img">
-            <img class="img1" src="/images/sydnyc.jpg" alt="logo">
-        </div> 
-    </div>
-   
-
-    <form action="/register" method="post" class="form-register">
-        <h2 class="tittle-register">Registrate!</h2>
+    <main class="main-register">
+        <form action="/register" method="post" class="form-register" enctype="multipart/form-data">
+            <h2 class="tittle-register">Registrate!</h2>
+            <% if(locals.errors) {
+                errors.forEach(error => { %>
+                    <p class="form-error"> <%- error.msg  %></p>
+                    <% } ) 
+                }  %>
         <div class="text">
-            <input class="input-register"type="text" name="nombre" id="Nombre" required>
+            <input class="input-register"type="text" name="nombre" id="Nombre" value="<%= locals.old && old.nombre ? old.nombre : ''  %>">
             <label class="label-register" for="">Nombre</label>
+            
+             
+             
         </div>
         <div class="text">
-            <input class="input-register" type="text" name="usuario" id="Usuario" required>
+            <input class="input-register" type="text" name="usuario" id="Usuario"value="<%= locals.old && old.usuario ? old.usuario : ''  %>" >
             <label class="label-register" for="">Nombre de Usuario</label>
         </div>
         <div class="text">
-            <input class="input-register" type="email" name="email" id="email" required>
+            <input class="input-register" type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : ''  %>">
             <label class="label-register" for="">Email</label>
         </div>
         <div class="text">
-            <input class="input-register"type="date" name="fecha" required>
             <label class="label-register" for="">Fecha de nacimiento</label>
+            <input class="input-register"type="date" name="fecha" value="<%= locals.old && old.fecha ? old.fecha : ''  %>">
         </div>
         <div class="text">
-            <input class="input-register" type="password" name="password" id="password" required>
+            <label for="imagen">Imagen de perfil</label>
+            <input type="file" name="imagenUsuario" >
+        </div>
+        <div class="text">
+            <input class="input-register" type="password" name="password" id="password" >
             <label class="label-register" for="">Contraseña</label>
         </div>
         
@@ -45,9 +49,17 @@
     </form>
 </main>
 
-<%- include('./partials/footer.ejs')  %>
+        </form>
+
+
+    </main>
+
+
+        
+    <!-- footer -->
+    <%- include('./partials/footer.ejs')  %>
 
 </body>
-</html>
 
+</html>
    

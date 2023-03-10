@@ -3,11 +3,6 @@ const router = express.Router();
 const mainController=require('../controllers/mainContollers')
 
 
-
-
-
-
-
 router.get('/carrito',mainController.carrito);
 
 router.get('/',mainController.index);
