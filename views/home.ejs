@@ -2,7 +2,16 @@
 <html lang="en">
 <%- include('./partials/head') %>
 <body class="body-home">
-    <%- include('./partials/header') %> 
+
+    <% if (isLogged) { %> // is logged
+                    <!--CAMBIAR EN VEZ DE LOGIN POR IS LOGGED SESSIONMIDDLEWARES-->
+
+        <%- include('./partials/userHeader') %>
+     
+    <% } else { %>
+        <%- include('./partials/header') %>
+    <% } %>
+    
     <main class="main-home">
         <div>
             <h3 id="#products" class="tittle-home">PRODUCTOS</h3>
