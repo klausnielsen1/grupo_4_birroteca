@@ -38,7 +38,21 @@ header{
   outline: none;
   margin-left: -33px;
 }
-
+.login-header ul li{
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.login-header a{
+  text-decoration: none;
+  color: rgba(175, 175, 175, 0.932);
+  font-size: 14px;
+}
+.login-header a:hover{
+  color: rgba(196, 147, 43, 0.87)
+}
 
 
 

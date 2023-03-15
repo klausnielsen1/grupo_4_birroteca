@@ -33,8 +33,8 @@ module.exports= {
                 usuario: req.body.usuario,
                 email: req.body.email,
                 fecha: req.body.fecha,
-                password: bcrypt.hashSync(req.body.password, 10) 
-                
+                password: bcrypt.hashSync(req.body.password, 10),
+                imagenUsuario: req.body.imagenUsuario
             }
         
             users.push(userData);   
