@@ -11,9 +11,9 @@ const db = require('../src/database/models/Usuario');
 
 module.exports= {
     listaUsuarios: function (req,res){
-        db.usuario.findAll()
+        db.clientes.findAll()
             .then(function(usuario){
-                res.render('listadoUsuarios',{usuarios:usuario})
+                res.render('listadoUsuarios',{usuarios:usuario}) //no es mas usuario
             })
     },
     getRegister: (req,res)=>{
