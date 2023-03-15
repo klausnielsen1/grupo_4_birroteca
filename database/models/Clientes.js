@@ -1,6 +1,6 @@
 //2 parámetros, el primero es la conexión de la BD y el segundo son los tipos de BD para trabajar 
 module.exports = ( sequelize, dataTypes) =>{
-    let alias = "clientes";
+    let alias = "cliente";
     let cols={
        
         id: {
@@ -37,12 +37,12 @@ module.exports = ( sequelize, dataTypes) =>{
         }
     }
     let config = {
-        tableName: "clientes",
+        tableName: "cliente",
         timestamps:false
     }
 
-    const clientes= sequelize.define(alias,cols,config);
+    const cliente= sequelize.define(alias,cols,config);
 
 
-    return clientes;
+    return cliente;
 }
