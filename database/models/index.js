@@ -1,3 +1,4 @@
+//acá se arma la conexión con la BD
 'use strict';
 
 const fs = require('fs');
@@ -41,3 +42,4 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+//la variable db la vamos a importar en los controladores para operar con la BD

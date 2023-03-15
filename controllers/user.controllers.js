@@ -9,12 +9,11 @@ const db = require('../src/database/models/Usuario');
 
 
 
-
 module.exports= {
     listaUsuarios: function (req,res){
-        db.Usuarios.findAll()
-            .then(function(usuarios){
-                res.render('listadoUsuarios',{usuarios:Usuarios})
+        db.usuario.findAll()
+            .then(function(usuario){
+                res.render('listadoUsuarios',{usuarios:usuario})
             })
     },
     getRegister: (req,res)=>{
