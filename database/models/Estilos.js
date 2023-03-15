@@ -1,4 +1,3 @@
-//2 parámetros, el primero es la conexión de la BD y el segundo son los tipos de BD para trabajar 
 module.exports = ( sequelize, dataTypes) =>{
     let alias = "cliente";
     let cols={
