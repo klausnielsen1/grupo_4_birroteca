@@ -1,50 +1,73 @@
 module.exports = ( sequelize, dataTypes) =>{
-    let alias = "cliente";
+    let alias = "producto";
     let cols={
        
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
+
+        id_categoria : {
+            type: dataTypes.INTEGER,
+            foreignKey: true,
+            autoIncrement: true,
+            allowNull: false
+        },
+
+        id_marca : {
+            type: dataTypes.INTEGER,
+            foreignKey: true,
+            autoIncrement: true,
+            allowNull: false
+        },
+
+        id_estilo : {
+            type: dataTypes.INTEGER,
+            foreignKey: true,
+            autoIncrement: true,
+            allowNull: false
+        },
+
+        id_distribuidor : {
+            type: dataTypes.INTEGER,
+            foreignKey: true,
+            autoIncrement: true,
+            allowNull: false
+        },
+
         nombre: {
             type: dataTypes.STRING,
-            notNull: true, 
+            allowNull: false 
 
         },
-        apellido:{
+
+        imagen:{
             type: dataTypes.STRING,
+            allowNull: false
 
         },
-        email: {
-            type: dataTypes.STRING,
+
+        descripcion: {
+            type: dataTypes.TEXT,
+            allowNull: false
 
         },
-        contraseña: {
-            type: dataTypes.STRING,
 
-        },
-        fechaNac:{
-            type: dataTypes.DATE,
-
-        },
-        avatar: {
+        precio: {
             type: dataTypes.INTEGER,
-
-        },
-        id_clase: {
-            type: dataTypes.INTEGER,
-
+            allowNull: false
 
         }
     }
     let config = {
-        tableName: "cliente",
+        tableName: "producto",
         timestamps:false
     }
 
-    const cliente= sequelize.define(alias,cols,config);
+    const producto= sequelize.define(alias,cols,config);
 
 
-    return cliente;
+    return producto;
 }
