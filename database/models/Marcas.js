@@ -1,5 +1,5 @@
 module.exports = ( sequelize, dataTypes) =>{
-    let alias = "cliente";
+    let alias = "marca";
     let cols={
        
         id: {
@@ -9,42 +9,16 @@ module.exports = ( sequelize, dataTypes) =>{
         },
         nombre: {
             type: dataTypes.STRING,
-            notNull: true, 
-
-        },
-        apellido:{
-            type: dataTypes.STRING,
-
-        },
-        email: {
-            type: dataTypes.STRING,
-
-        },
-        contraseña: {
-            type: dataTypes.STRING,
-
-        },
-        fechaNac:{
-            type: dataTypes.DATE,
-
-        },
-        avatar: {
-            type: dataTypes.INTEGER,
-
-        },
-        id_clase: {
-            type: dataTypes.INTEGER,
-
-
+            allowNull: true
         }
     }
     let config = {
-        tableName: "cliente",
+        tableName: "marca",
         timestamps:false
     }
 
-    const cliente= sequelize.define(alias,cols,config);
+    const marca= sequelize.define(alias,cols,config);
 
 
-    return cliente;
+    return marca;
 }

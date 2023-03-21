@@ -6,38 +6,47 @@ module.exports = ( sequelize, dataTypes) =>{
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
+        
+        id_clase: {
+            type: dataTypes.INTEGER,
+            foreignKey: true,
+            autoIncrement: true,
+            allowNull: false
+        },
+
         nombre: {
             type: dataTypes.STRING,
-            notNull: true, 
-
+            allowNull: false, 
         },
+
         apellido:{
             type: dataTypes.STRING,
-
+            allowNull: false
         },
+
         email: {
             type: dataTypes.STRING,
-
+            allowNull: false
         },
+
         contraseña: {
             type: dataTypes.STRING,
-
+            allowNull: false
         },
+
         fechaNac:{
             type: dataTypes.DATE,
 
         },
+
         avatar: {
             type: dataTypes.INTEGER,
-
-        },
-        id_clase: {
-            type: dataTypes.INTEGER,
-
-
+            allowNull: true
         }
+
     }
     let config = {
         tableName: "cliente",
