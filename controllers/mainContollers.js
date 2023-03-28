@@ -1,7 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 const productsFilePath = path.join(__dirname,'../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'))
+const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'));
+//const db = require('../src/database/models/Usuario');
+
+
+
 
 
 
@@ -28,12 +32,23 @@ module.exports={
         res.render('product-create')
     },
     crear: (req,res)=>{
-        const productsFilePath = path.join(__dirname,'../data/products.json');
-        const products = JSON.parse(fs.readFileSync(productsFilePath));
-        products.push(req.body);
-        const newProducts = JSON.stringify(products);
-        fs.writeFileSync(path.join(__dirname,'../data/products.json'),newProducts);
-        res.redirect('/')
+        db.producto.create({
+
+        
+        
+        })
+        
+        
+        
+        
+        // const productsFilePath = path.join(__dirname,'../data/products.json');
+        // const products = JSON.parse(fs.readFileSync(productsFilePath));
+        // products.push(req.body);
+        // const newProducts = JSON.stringify(products);
+        // fs.writeFileSync(path.join(__dirname,'../data/products.json'),newProducts);
+        // res.redirect('/')
+
+
     },
 
     edit: (req,res)=>{

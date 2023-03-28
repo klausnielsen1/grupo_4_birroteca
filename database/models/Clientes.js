@@ -13,7 +13,7 @@ module.exports = ( sequelize, dataTypes) =>{
         id_clase: {
             type: dataTypes.INTEGER,
             foreignKey: true,
-            autoIncrement: true,
+            
             allowNull: false
         },
 
@@ -21,31 +21,27 @@ module.exports = ( sequelize, dataTypes) =>{
             type: dataTypes.STRING,
             allowNull: false, 
         },
-
-        apellido:{
+        usuario: {
             type: dataTypes.STRING,
-            allowNull: false
+            allowNull: false, 
         },
+
+        
 
         email: {
             type: dataTypes.STRING,
             allowNull: false
         },
 
-        contraseña: {
+        password: {
             type: dataTypes.STRING,
             allowNull: false
         },
 
-        fechaNac:{
+        fecha:{
             type: dataTypes.DATE,
 
         },
-
-        avatar: {
-            type: dataTypes.INTEGER,
-            allowNull: true
-        }
 
     }
     let config = {

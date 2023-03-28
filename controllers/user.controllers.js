@@ -4,48 +4,62 @@ const path= require('path');
 const bcrypt= require('bcryptjs');
 const multer=require('multer');
 const {validationResult}= require('express-validator');
-const db = require('../src/database/models/Usuario');
-
+const db = require('../database/models');
+const users = db.clientes
 
 
 
 module.exports= {
-    listaUsuarios: function (req,res){
-        db.clientes.findAll()
-            .then(function(usuario){
-                res.render('listadoUsuarios',{usuarios:usuario}) //no es mas usuario
-            })
-    },
+    // listaUsuarios: function (req,res){
+    //     db.clientes.findAll()
+    //         .then(function(usuario){
+    //             res.render('listadoUsuarios',{usuarios:usuario}) //no es mas usuario
+    //         })
+    
     getRegister: (req,res)=>{
         res.render('register')
     },
 
     postUser: function(req,res){
-        let errors = validationResult(req);
-        if (errors.isEmpty()){
+        console.log(users);
+        users.create({
+            nombre: req.body.nombre,
+            usuario: req.body.usuario,
+            email: req.body.email,
+            fecha:req.body.fecha,
+            password:bcrypt.hashSync(req.body.password, 10)
+        });
+        res.redirect('/')
 
-            const users= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json')));
+
+
+
+
+        // let errors = validationResult(req);
+        // if (errors.isEmpty()){
+
+        //     const users= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json')));
             
     
-            const userData= {
-                nombre: req.body.nombre,
-                usuario: req.body.usuario,
-                email: req.body.email,
-                fecha: req.body.fecha,
-                password: bcrypt.hashSync(req.body.password, 10) 
+        //     const userData= {
+        //         nombre: req.body.nombre,
+        //         usuario: req.body.usuario,
+        //         email: req.body.email,
+        //         fecha: req.body.fecha,
+        //         password: bcrypt.hashSync(req.body.password, 10) 
                 
-            }
+        //     }
         
-            users.push(userData);   
-            fs.writeFileSync(path.join(__dirname, '../data/users.json'), (JSON.stringify(users)));
+        //     users.push(userData);   
+        //     fs.writeFileSync(path.join(__dirname, '../data/users.json'), (JSON.stringify(users)));
         
-            res.redirect('/')
-        } else {
-            res.render('register',{
-                errors:errors.array(),
-                old:req.body
-            })
-        }
+        //     res.redirect('/')
+        // } else {
+        //     res.render('register',{
+        //         errors:errors.array(),
+        //         old:req.body
+        //     })
+        // }
 
 
 
