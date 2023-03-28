@@ -22,6 +22,18 @@ module.exports = ( sequelize, dataTypes) =>{
 
     const distribuidor= sequelize.define(alias,cols,config);
 
+    ////////////////////////hasMany////////////////////////////////
+
+    distribuidor.associate = function (models){
+
+        distribuidor.hasMany(models.producto, {
+
+            as: "producto",
+            foreignKey:"id_distribuidor" 
+
+        });
+
+    }
 
     return distribuidor;
 }

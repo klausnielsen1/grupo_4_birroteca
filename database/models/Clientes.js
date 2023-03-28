@@ -10,12 +10,6 @@ module.exports = ( sequelize, dataTypes) =>{
             allowNull: false
         },
         
-        id_clase: {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            
-            allowNull: false
-        },
 
         nombre: {
             type: dataTypes.STRING,
@@ -24,9 +18,7 @@ module.exports = ( sequelize, dataTypes) =>{
         usuario: {
             type: dataTypes.STRING,
             allowNull: false, 
-        },
-
-        
+        },        
 
         email: {
             type: dataTypes.STRING,
@@ -50,6 +42,33 @@ module.exports = ( sequelize, dataTypes) =>{
     }
 
     const cliente= sequelize.define(alias,cols,config);
+
+    ////////////////////////belongsTo////////////////////////////////
+
+
+    cliente.associate = function (models){
+
+        cliente.belongsTo(models.clase, {
+
+            as: "clase",
+            foreignKey:"id_clase"
+            
+        });
+
+    }
+
+    ////////////////////////hasMany////////////////////////////////
+
+    cliente.associate = function (models){
+
+        cliente.hasMany(models.pedido, {
+            
+            as: "pedido",
+            foreignKey:"id_cliente"
+
+        });
+
+    }
 
 
     return cliente;

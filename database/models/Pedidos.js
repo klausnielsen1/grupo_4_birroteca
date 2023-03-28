@@ -6,21 +6,7 @@ module.exports = ( sequelize, dataTypes) =>{
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
-        },        
-
-        id_cliente: {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },   
-
-        id_carrito: {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
+        },  
 
         nombre: {
             type: dataTypes.STRING,
@@ -65,6 +51,29 @@ module.exports = ( sequelize, dataTypes) =>{
 
     const pedido= sequelize.define(alias,cols,config);
 
+
+    pedido.associate = function (models){
+
+        pedido.belongsTo(models.cliente, {
+
+            as: "cliente",
+            foreignKey:"id_cliente"
+        });
+
+    }
+
+    
+    pedido.associate = function (models){
+
+        pedido.belongsTo(models.carrito, {
+
+            as: "carrito",
+            foreignKey:"id_carrito"
+        });
+
+    }
+
+    
 
     return pedido;
 }
