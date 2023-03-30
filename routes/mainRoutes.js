@@ -21,4 +21,24 @@ router.get('/products/:id',mainController.detail );
 router.post('/products/create',mainController.crear)
 router.delete('/:id', mainController.delete)
 
+//**************modificaciones 29/03
+
+//ruta para LIST
+//router.get('/productos', mainController.list)
+
+
+//ruta para agregar un producto
+//router.get('/products/add', mainController.add);
+//router.post('/products/create', mainController.create) //esta es la ruta que figura en el formulario de creación 
+
+
+
+//rutas para la creación de CRUD
+//(mainController.add)
+//(mainController.create)
+//(mainController.edit)
+//(mainController.update)
+//(mainController.delete)
+///mainController.destroy)
+
 module.exports = router

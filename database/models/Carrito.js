@@ -1,5 +1,5 @@
 module.exports = ( sequelize, dataTypes) =>{
-    let alias = "carrito";
+    let alias = "carrito"; //alias de la tabla
     let cols={
        
         id: {

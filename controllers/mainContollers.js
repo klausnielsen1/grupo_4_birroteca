@@ -2,9 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const productsFilePath = path.join(__dirname,'../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'));
-//const db = require('../src/database/models/Usuario');
 
+const db= require ('../database/models');
+const sequelize =db.sequelize;
+const {Op} = require('sequelize');
 
+//Para llamar a los modelos con otro nombre 
+const Producto = db.Producto; 
 
 
 
@@ -36,8 +40,7 @@ module.exports={
 
         
         
-        })
-        
+        })     
         
         
         
@@ -93,6 +96,61 @@ module.exports={
         }
 
     },
+    //método LIST para que traiga todos los productos. 
+    // 'list': (req, res) => {
+    //     Producto.findAll()
+    //         .then(producto => {
+    //             res.render('vistaDeProductos.ejs', {producto}); //** acá iría la vista donde mostramos todos los productos.*/ 
+    //         });
+        
+    // }
+
+    //método DETAIL para ver el detalle de los productos
+    // 'detail': (req, res) =>{
+
+    //    let id = req.params.id;
+    //     Producto.findByPK(id)
+    //         .then(product =>{
+    //             res.render('product-detail', {product}); //le puse product porque así está en la vista
+    //         })
+
+    // }
+
+    //método ADD para agregar un producto 
+    // add: function (req, res){
+        
+    //     res.render('products/add')
+
+    // },
+    // create: function (req,res){
+
+    //     //los valores dsp de body deben ser los mismos que figuran en name de product-create.ejs
+    //     let product = {
+    //     //a la izquierda el nombre de la columna en la DB y a la derecha el nombre que pusimos en el formulario 
+        
+    //     nombre : req.body.name,
+    //     categoria : req.body.category,
+    //     imagen : req.body.image,
+    //     descripcion : req.body.description,
+    //     precio : req.body.price 
+
+    //     }
+    //     //ponemos producto porque así lo llamé en la línea 11
+    //     Producto.create(product)         //para guardar en la db
+
+    //     .then(product=>{
+    //         console.log(product)
+
+    //         res.redirect('/') //redirecciona a la home??? se puede cambiar
+    //     })
+
+    //     .catch(error =>{
+    //         console.log(error)
+    //     })
+
+
+        
+    // }
 
 
 
