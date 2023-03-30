@@ -22,14 +22,20 @@ module.exports= {
 
     postUser: function(req,res){
         console.log(users);
-        users.create({
+        let usuario={
             nombre: req.body.nombre,
             usuario: req.body.usuario,
             email: req.body.email,
             fecha:req.body.fecha,
             password:bcrypt.hashSync(req.body.password, 10)
-        });
-        res.redirect('/')
+        }
+        db.clientes.create(usuario)
+            .then(usuario => {
+                res.redirect('/')
+            })
+        
+        
+        
     
 
         // let errors = validationResult(req);
