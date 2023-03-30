@@ -100,7 +100,7 @@ module.exports={
     // 'list': (req, res) => {
     //     Producto.findAll()
     //         .then(producto => {
-    //             res.render('vistaDeProductos.ejs', {producto}); //** acá iría la vista donde mostramos todos los productos.*/ 
+    //             res.render('home.ejs', {producto}); //** acá iría la vista donde mostramos todos los productos.*/ 
     //         });
         
     // }
@@ -119,7 +119,7 @@ module.exports={
     //método ADD para agregar un producto 
     // add: function (req, res){
         
-    //     res.render('products/add')
+    //     res.render('/products/create')
 
     // },
     // create: function (req,res){
@@ -138,7 +138,7 @@ module.exports={
     //     //ponemos producto porque así lo llamé en la línea 11
     //     Producto.create(product)         //para guardar en la db
 
-    //     .then(product=>{
+    //     .then(product=>{ //sin el then no aparece en el listado el producto creado 
     //         console.log(product)
 
     //         res.redirect('/') //redirecciona a la home??? se puede cambiar

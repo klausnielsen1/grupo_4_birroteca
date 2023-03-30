@@ -30,10 +30,7 @@ module.exports= {
             password:bcrypt.hashSync(req.body.password, 10)
         });
         res.redirect('/')
-
-
-
-
+    
 
         // let errors = validationResult(req);
         // if (errors.isEmpty()){
@@ -98,7 +95,13 @@ module.exports= {
             return res.render('/login');
             //mostrar errores en la vista
         }
-         },
+    },
+
+    //función EDIT
+
+    edit: function (req,res){
+        res.render('user-edit')
+    }
 
 
 }

@@ -5,6 +5,8 @@ const multer=require('multer');
 const path=require('path');
 const {body}=require('express-validator')
 
+
+
 const validateCreateForm = [
     body('nombre').notEmpty().withMessage('Debes completar el campo de nombre'),
     body('usuario').notEmpty().withMessage('Debes completar el campo de usuario'),
@@ -35,6 +37,10 @@ router.post('/login', userController.postLogin);
 
 //router.get('/usuarios',userController.listaUsuarios)
 
+//ruta para editar un usuario//
+router.get('/user-edit', userController.edit);
+
+//router.put('/products/:id/edit', userController.update);
 
 
 module.exports=router;

@@ -9,34 +9,6 @@ module.exports = ( sequelize, dataTypes) =>{
             allowNull: false
         },
 
-        id_categoria : {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-
-        id_marca : {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-
-        id_estilo : {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-
-        id_distribuidor : {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-
         nombre: {
             type: dataTypes.STRING,
             allowNull: false 

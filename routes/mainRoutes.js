@@ -28,7 +28,7 @@ router.delete('/:id', mainController.delete)
 
 
 //ruta para agregar un producto
-//router.get('/products/add', mainController.add);
+//router.get('/products/create', mainController.add);
 //router.post('/products/create', mainController.create) //esta es la ruta que figura en el formulario de creación 
 
 
@@ -36,6 +36,8 @@ router.delete('/:id', mainController.delete)
 //rutas para la creación de CRUD
 //(mainController.add)
 //(mainController.create)
+
+
 //(mainController.edit)
 //(mainController.update)
 //(mainController.delete)
