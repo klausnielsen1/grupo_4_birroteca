@@ -1,5 +1,5 @@
 module.exports = ( sequelize, dataTypes) =>{
-    let alias = "producto";
+    let alias = "Producto";
     let cols={
        
         id: {
@@ -14,12 +14,13 @@ module.exports = ( sequelize, dataTypes) =>{
             allowNull: false 
 
         },
-
-        imagen:{
+        category: {
             type: dataTypes.STRING,
-            allowNull: false
+            allowNull: false 
 
         },
+
+        
 
         descripcion: {
             type: dataTypes.TEXT,
@@ -34,7 +35,7 @@ module.exports = ( sequelize, dataTypes) =>{
         }
     }
     let config = {
-        tableName: "producto",
+        tableName: "productos",
         timestamps:false
     }
 
@@ -42,74 +43,74 @@ module.exports = ( sequelize, dataTypes) =>{
 
     ////////////////////////hasMany////////////////////////////////
 
-    producto.associate = function (models){
+    // producto.associate = function (models){
 
-        producto.hasMany(models.carrito, {
+    //     producto.hasMany(models.carrito, {
             
-            as: "carrito",
-            foreignKey:"id_producto"
+    //         as: "carrito",
+    //         foreignKey:"id_producto"
 
-        });
+    //     });
 
-    }
+    // }
 
-    producto.associate = function (models){
+    // producto.associate = function (models){
 
-        producto.hasMany(models.stock, {
+    //     producto.hasMany(models.stock, {
             
-            as: "stock",
-            foreignKey:"id_producto"
+    //         as: "stock",
+    //         foreignKey:"id_producto"
 
-        });
+    //     });
 
-    }
+    // }
 
-    ////////////////////////belongsTo////////////////////////////////
+    // ////////////////////////belongsTo////////////////////////////////
 
 
-    producto.associate = function (models){
+    // producto.associate = function (models){
 
-        producto.belongsTo(models.categoria, {
+    //     producto.belongsTo(models.categoria, {
 
-            as: "categoria",
-            foreignKey:"id_categoria" 
+    //         as: "categoria",
+    //         foreignKey:"id_categoria" 
 
-        });
+    //     });
 
-    }
+    // }
 
-    producto.associate = function (models){
+    // producto.associate = function (models){
 
-        producto.belongsTo(models.marca, {
+    //     producto.belongsTo(models.marca, {
 
-            as: "marca",
-            foreignKey:"id_marca" 
+    //         as: "marca",
+    //         foreignKey:"id_marca" 
 
-        });
+    //     });
 
-    }
+    // }
 
-    producto.associate = function (models){
+    // producto.associate = function (models){
 
-        producto.belongsTo(models.estilo, {
+    //     producto.belongsTo(models.estilo, {
 
-            as: "estilo",
-            foreignKey:"id_estilo" 
+    //         as: "estilo",
+    //         foreignKey:"id_estilo" 
 
-        });
+    //     });
 
-    }
+    // }
 
-    producto.associate = function (models){
+    // producto.associate = function (models){
 
-        producto.belongsTo(models.distribuidor, {
+    //     producto.belongsTo(models.distribuidor, {
 
-            as: "distribuidor",
-            foreignKey:"id_distribuidor" 
+    //         as: "distribuidor",
+    //         foreignKey:"id_distribuidor" 
 
-        });
+    //     });
 
-    }
+    // }
 
     return producto;
 }

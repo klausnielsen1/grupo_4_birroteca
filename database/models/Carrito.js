@@ -24,28 +24,28 @@ module.exports = ( sequelize, dataTypes) =>{
 
     ////////////////////////hasMany////////////////////////////////
 
-    carrito.associate = function (models){
+    // carrito.associate = function (models){
 
-        carrito.hasMany(models.pedido, {
+    //     carrito.hasMany(models.pedido, {
             
-            as: "pedido",
-            foreignKey:"id_carrito"
-        });
+    //         as: "pedido",
+    //         foreignKey:"id_carrito"
+    //     });
 
-    }
+    // }
 
-    ////////////////////////belongsTo////////////////////////////////
+    // ////////////////////////belongsTo////////////////////////////////
 
 
-    carrito.associate = function (models){
+    // carrito.associate = function (models){
 
-        carrito.belongsTo(models.producto, {
+    //     carrito.belongsTo(models.producto, {
 
-            as: "producto",
-            foreignKey:"id_producto"
-        });
+    //         as: "producto",
+    //         foreignKey:"id_producto"
+    //     });
 
-    }
+    // }
 
     return carrito;
 }

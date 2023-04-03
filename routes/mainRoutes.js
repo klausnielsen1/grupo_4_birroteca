@@ -1,6 +1,31 @@
 const express = require('express');
 const router = express.Router();
-const mainController=require('../controllers/mainContollers')
+const mainController=require('../controllers/mainContollers');
+const multer=require('multer');
+const {body}=require('express-validator')
+
+
+
+const validateCreateForm = [
+    body('name').notEmpty().withMessage('Debes completar el campo de nombre'),
+    body('category').notEmpty().withMessage('Debes seleccionar una de las dos opciones'),
+    body('descripcion').notEmpty().withMessage('Debes seleccionar una fecha'),
+    body('productImg').notEmpty().withMessage('Debes agregar una descripcion'),
+    body('precio').notEmpty().withMessage('Debes determinar el precio del producto')
+]
+
+
+let multerDiskStorage = multer.diskStorage({
+    destination:(req,file,callback) =>
+    {let folder = path.join(__dirname,'../public/productImg');
+    callback(null,folder)
+},
+    filename:(req,file,callback) => {
+        let imageName = Date.now() + path.extname(file.originalname);
+        callback(null,imageName)
+    }
+})
+let fileUpload = multer({storage:multerDiskStorage})
 
 
 router.get('/carrito',mainController.carrito);
@@ -9,7 +34,7 @@ router.get('/',mainController.index);
 
 router.get('/admin',mainController.product);
 
-router.get('/products/create',mainController.create );
+router.get('/products/create',mainController.add );
 
 
 
@@ -18,7 +43,7 @@ router.get('/products/:id/edit',mainController.edit);
 router.put('/products/:id/edit',mainController.update);
 
 router.get('/products/:id',mainController.detail );
-router.post('/products/create',mainController.crear)
+router.post('/products/create',fileUpload.single('productImg'),validateCreateForm,mainController.create)
 router.delete('/:id', mainController.delete)
 
 //**************modificaciones 29/03

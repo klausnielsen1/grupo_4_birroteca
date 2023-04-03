@@ -8,7 +8,7 @@ const sequelize =db.sequelize;
 const {Op} = require('sequelize');
 
 //Para llamar a los modelos con otro nombre 
-const Producto = db.Producto; 
+const producto = db.Producto; 
 
 
 
@@ -22,14 +22,16 @@ module.exports={
     add: (req,res)=>{
         res.render('product-create')
     },
-    crear: (req,res)=>{
+    create: (req,res)=>{
         let productCreate = {
-            name: req.body.name,
+            nombre: req.body.name,
             category: req.body.category,
-            descripcion: req.body.desciption,
-            price:req.body.price
-        }    
-        Producto.create(productCreate)
+            imagen:req.body.productsImg,
+            descripcion: req.body.description,
+            precio:req.body.price
+        } 
+        console.log(productCreate)   
+        producto.create(productCreate)
             .then(producto=>{
                 res.redirect('/')
             })
@@ -69,7 +71,7 @@ module.exports={
     edit: (req,res)=>{
         let id = req.params.id;
         let product = db.Producto.findByPk(id,{
-            include:[{association: "carrito"},{association: "stock"},{association: "categoria"},{association: "marca"},{association: "estilo"},{association: "distribuidor"}]
+            //include:[{association: "carrito"},{association: "stock"},{association: "categoria"},{association: "marca"},{association: "estilo"},{association: "distribuidor"}]
         })
         // let product = products.find(product=>product.id==id);
         res.render('product-edit',{product});
