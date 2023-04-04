@@ -9,13 +9,6 @@ module.exports = ( sequelize, dataTypes) =>{
             allowNull: false
         },
 
-        id_producto: {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-
         cantidad: {
             type: dataTypes.INTEGER,
             allowNull: false
@@ -27,6 +20,18 @@ module.exports = ( sequelize, dataTypes) =>{
     }
 
     const stock= sequelize.define(alias,cols,config);
+
+
+    stock.associate = function (models){
+
+        stock.hasMany(models.producto, {
+            
+            as: "producto",
+            foreignKey:"id_producto"
+
+        });
+
+    }
 
 
     return stock;

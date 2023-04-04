@@ -10,42 +10,30 @@ module.exports = ( sequelize, dataTypes) =>{
             allowNull: false
         },
         
-        id_clase: {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
 
         nombre: {
             type: dataTypes.STRING,
             allowNull: false, 
         },
-
-        apellido:{
+        usuario: {
             type: dataTypes.STRING,
-            allowNull: false
-        },
+            allowNull: false, 
+        },        
 
         email: {
             type: dataTypes.STRING,
             allowNull: false
         },
 
-        contraseña: {
+        password: {
             type: dataTypes.STRING,
             allowNull: false
         },
 
-        fechaNac:{
+        fecha:{
             type: dataTypes.DATE,
 
         },
-
-        avatar: {
-            type: dataTypes.INTEGER,
-            allowNull: true
-        }
 
     }
     let config = {
@@ -54,6 +42,33 @@ module.exports = ( sequelize, dataTypes) =>{
     }
 
     const cliente= sequelize.define(alias,cols,config);
+
+    ////////////////////////belongsTo////////////////////////////////
+
+
+    cliente.associate = function (models){
+
+        cliente.belongsTo(models.clase, {
+
+            as: "clase",
+            foreignKey:"id_clase"
+            
+        });
+
+    }
+
+    ////////////////////////hasMany////////////////////////////////
+
+    cliente.associate = function (models){
+
+        cliente.hasMany(models.pedido, {
+            
+            as: "pedido",
+            foreignKey:"id_cliente"
+
+        });
+
+    }
 
 
     return cliente;

@@ -22,6 +22,19 @@ module.exports = ( sequelize, dataTypes) =>{
 
     const clase= sequelize.define(alias,cols,config);
 
+    ////////////////////////hasMany////////////////////////////////
+
+
+    clase.associate = function (models){
+
+        clase.hasMany(models.cliente, {
+
+            as: "cliente",
+            foreignKey:"id_clase"
+        });
+
+    }
+
 
     return clase;
 }

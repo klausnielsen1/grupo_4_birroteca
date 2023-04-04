@@ -1,5 +1,5 @@
 module.exports = ( sequelize, dataTypes) =>{
-    let alias = "carrito";
+    let alias = "carrito"; //alias de la tabla
     let cols={
        
         id: {
@@ -9,12 +9,6 @@ module.exports = ( sequelize, dataTypes) =>{
             allowNull: false
         },
 
-        id_producto: {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
 
         cantidad: {
             type: dataTypes.INTEGER,
@@ -28,6 +22,30 @@ module.exports = ( sequelize, dataTypes) =>{
 
     const carrito= sequelize.define(alias,cols,config);
 
+    ////////////////////////hasMany////////////////////////////////
+
+    carrito.associate = function (models){
+
+        carrito.hasMany(models.pedido, {
+            
+            as: "pedido",
+            foreignKey:"id_carrito"
+        });
+
+    }
+
+    ////////////////////////belongsTo////////////////////////////////
+
+
+    carrito.associate = function (models){
+
+        carrito.belongsTo(models.producto, {
+
+            as: "producto",
+            foreignKey:"id_producto"
+        });
+
+    }
 
     return carrito;
 }

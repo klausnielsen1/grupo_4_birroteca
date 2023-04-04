@@ -21,7 +21,19 @@ module.exports = ( sequelize, dataTypes) =>{
     }
 
     const estilo= sequelize.define(alias,cols,config);
+    
+    ////////////////////////hasMany////////////////////////////////
 
+    estilo.associate = function (models){
+
+        estilo.hasMany(models.producto, {
+
+            as: "producto",
+            foreignKey:"id_estilo" 
+
+        });
+
+    }
 
     return estilo;
 }
