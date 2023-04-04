@@ -24,16 +24,16 @@ module.exports = ( sequelize, dataTypes) =>{
 
     ////////////////////////hasMany////////////////////////////////
 
-    distribuidor.associate = function (models){
+    // distribuidor.associate = function (models){
 
-        distribuidor.hasMany(models.producto, {
+    //     distribuidor.hasMany(models.producto, {
 
-            as: "producto",
-            foreignKey:"id_distribuidor" 
+    //         as: "producto",
+    //         foreignKey:"id_distribuidor" 
 
-        });
+    //     });
 
-    }
+    // }
 
     return distribuidor;
 }

@@ -11,10 +11,10 @@
     <main class="main-login">
 
 
-        <form class="form-login" action="/login" method="post">
+        <form id="login-form" class="form-login" action="/login" method="post">
 
             <label for="name">Nombre:</label>
-            <input type="text" name="usuario" id="name">
+            <input id="input-login" type="text" name="usuario" id="name">
 
             <label for="password">Contraseña:</label>
             <input type="password" name="password" id="password">
@@ -22,7 +22,7 @@
             
             <div class="btn-links-login">
                 <button class="btn-send-login">Enviar</button>
-                
+                <p class="">Formulario enviado con exito!</p>
                 <div>
                     <label for="keep-login">Mantener sesion iniciada?  <input type="checkbox" name="remember" id="remember"></label>
                    <a href="">Olvidaste la Contraseña?</a>
@@ -64,7 +64,7 @@
 
         <button type="submit "class="btn-login">Iniciar sesion</a>
     </form> -->
-
+<script src="../controllers/validation.js" ></script>
 <%- include('./partials/footer.ejs')  %>
 </body>
 

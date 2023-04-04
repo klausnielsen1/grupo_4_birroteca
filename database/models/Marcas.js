@@ -21,16 +21,16 @@ module.exports = ( sequelize, dataTypes) =>{
     
     ////////////////////////hasMany////////////////////////////////
 
-    marca.associate = function (models){
+    // marca.associate = function (models){
 
-        marca.hasMany(models.producto, {
+    //     marca.hasMany(models.producto, {
 
-            as: "producto",
-            foreignKey:"id_marca" 
+    //         as: "producto",
+    //         foreignKey:"id_marca" 
 
-        });
+    //     });
 
-    }
+    // }
 
 
     return marca;
