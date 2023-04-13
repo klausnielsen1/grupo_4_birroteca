@@ -8,7 +8,7 @@
 
     <section class="section-admin-produ">
         <h1>Agregar/Modificar producto</h1>
-        <form action="/products/create" method="POST">
+        <form action="/products/create" method="POST" enctype="multipart/form-data">
 
             <label for="name">Nombre:</label>
             <input type="text" name="name" id="name">
@@ -20,7 +20,7 @@
             </select>
         
             <label for="image">Imagen:</label>
-            <input type="file" name="productsImg" id="image">
+            <input type="file" name="productImg" id="image">
 
             <label for="description">Descripcion:</label>
             <input type="text" name="description" id="description">
@@ -35,7 +35,3 @@
 
         </form>
     </section>
-
-    <%- include('./partials/footer.ejs')  %>
-</body>
-</html>

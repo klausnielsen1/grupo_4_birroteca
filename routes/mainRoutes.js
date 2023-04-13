@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const router = express.Router();
 const mainController=require('../controllers/mainContollers');
 const multer=require('multer');
@@ -15,17 +16,16 @@ const validateCreateForm = [
 ]
 
 
-let multerDiskStorage = multer.diskStorage({
-    destination:(req,file,callback) =>
-    {let folder = path.join(__dirname,'../public/productImg');
-    callback(null,folder)
-},
-    filename:(req,file,callback) => {
-        let imageName = Date.now() + path.extname(file.originalname);
-        callback(null,imageName)
-    }
-})
-let fileUpload = multer({storage:multerDiskStorage})
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+      cb(null, path.join(__dirname, "../public/productImg"));
+    },
+    filename: (req, file, cb) => {
+      cb(null, Date.now() + path.extname(file.originalname));
+    },
+  });
+  const upload = multer({ storage });
+
 
 
 router.get('/carrito',mainController.carrito);
@@ -43,10 +43,10 @@ router.get('/products/:id/edit',mainController.edit);
 router.put('/products/:id/edit',mainController.update);
 
 router.get('/products/:id',mainController.detail );
-router.post('/products/create',fileUpload.single('productImg'),validateCreateForm,mainController.create)
+router.post('/products/create',upload.single('productImg'),validateCreateForm,mainController.create)
 router.delete('/:id', mainController.delete)
 
-//**************modificaciones 29/03
+//**modificaciones 29/03
 
 //ruta para LIST
 //router.get('/productos', mainController.list)
@@ -66,6 +66,5 @@ router.delete('/:id', mainController.delete)
 //(mainController.edit)
 //(mainController.update)
 //(mainController.delete)
-///mainController.destroy)
-
 module.exports = router
+

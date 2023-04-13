@@ -26,7 +26,7 @@ module.exports={
         let productCreate = {
             nombre: req.body.name,
             category: req.body.category,
-            imagen:req.body.productsImg,
+            imagen:req.file.filename,
             descripcion: req.body.description,
             precio:req.body.price
         } 
