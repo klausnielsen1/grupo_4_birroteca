@@ -14,8 +14,8 @@ module.exports = ( sequelize, dataTypes) =>{
             allowNull: false 
 
         },
-        category: {
-            type: dataTypes.STRING,
+        id_categoria: {
+            type: dataTypes.INTEGER,
             allowNull: false 
 
         },
