@@ -11,33 +11,33 @@
     <main class="main-register">
         <form action="/register" method="post" class="form-register" enctype="multipart/form-data">
             <h2 class="tittle-register">Registrate!</h2>
-            <% if(locals.errors) {
+<!---->
+             <% if(locals.errors) { 
                 errors.forEach(error => { %>
                     <p class="form-error"> <%- error.msg  %></p>
                     <% } ) 
-                }  %>
+                }  %> 
+
         <div class="text">
             <input class="input-register"type="text" name="nombre" id="Nombre" value="<%= locals.old && old.nombre ? old.nombre : ''  %>">
             <label class="label-register" for="">Nombre</label>
-            
-             
              
         </div>
         <div class="text">
-            <input class="input-register" type="text" name="usuario" id="Usuario"value="<%= locals.old && old.usuario ? old.usuario : ''  %>" >
-            <label class="label-register" for="">Nombre de Usuario</label>
+            <input class="input-register" type="text" name="usuario" id="usuario"value="<%= locals.old && old.usuario ? old.usuario : ''  %>" >
+            <label class="label-register" for="usuario">Nombre de Usuario</label>
         </div>
         <div class="text">
             <input class="input-register" type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : ''  %>">
-            <label class="label-register" for="">Email</label>
+            <label class="label-register" for="email">Email</label>
         </div>
         <div class="text">
-            <label class="label-register" for="">Fecha de nacimiento</label>
-            <input class="input-register"type="date" name="fecha" value="<%= locals.old && old.fecha ? old.fecha : ''  %>">
+            <input class="input-register"type="date" name="fecha" id="fecha" value="<%= locals.old && old.fecha ? old.fecha : ''  %>">
+            <label class="label-register" for="fecha">Fecha de nacimiento</label>
         </div>
         <div class="text">
+            <input type="file" name="imagenUsuario" id="imagen">
             <label for="imagen">Imagen de perfil</label>
-            <input type="file" name="imagenUsuario" >
         </div>
         <div class="text">
             <input class="input-register" type="password" name="password" id="password" >
@@ -51,14 +51,8 @@
     </form>
 </main>
 
-        </form>
 
-
-    </main>
-
-
-        
-    <!-- footer -->
+<script src="../controllers/validation.js" ></script>
     <%- include('./partials/footer.ejs')  %>
 
 </body>

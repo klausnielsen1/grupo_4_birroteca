@@ -108,7 +108,18 @@ module.exports= {
 
     edit: function (req,res){
         res.render('user-edit')
-    }
+    },
 
+
+    //delete user
+
+    delete: function(req,res){
+        users.query('DELETE FROM cliente WHERE id = ?',[req.params.id],(err, rows, fields) => {
+            if(!err)
+            res.send('borrado')
+            else
+            console.log(err)
+        })
+    }
 
 }

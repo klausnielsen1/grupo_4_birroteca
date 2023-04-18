@@ -18,8 +18,8 @@ const validateCreateForm = [
 
 
 let multerDiskStorage = multer.diskStorage({
-    destination:(req,file,callback) =>
-    {let folder = path.join(__dirname,'../public/userImg');
+    destination:(req,file,callback) => {
+    let folder = path.join(__dirname,'../public/userImg');
     callback(null,folder)
 },
     filename:(req,file,callback) => {
