@@ -13,10 +13,22 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idClient: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName : "clients"
+          },
+          key : 'id'
+        }
       },
       idCart: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName : "carts"
+          },
+          key : 'id'
+        }
       },
       createdAt: {
         allowNull: false,

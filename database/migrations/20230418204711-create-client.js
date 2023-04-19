@@ -28,7 +28,13 @@ module.exports = {
         type: Sequelize.STRING
       },
       idClass: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName : "classes"
+          },
+          key : 'id'
+        }
       },
       createdAt: {
         allowNull: false,

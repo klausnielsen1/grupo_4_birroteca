@@ -22,16 +22,40 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idBrand: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName : "brands"
+          },
+          key : 'id'
+        }
       },
       idStyle: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName : "styles"
+          },
+          key : 'id'
+        }
       },
       idDistributor: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName : "distributors"
+          },
+          key : 'id'
+        }
       },
       idCategory: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName : "categories"
+          },
+          key : 'id'
+        }
       },
       createdAt: {
         allowNull: false,

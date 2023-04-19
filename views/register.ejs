@@ -8,51 +8,105 @@
     <%- include('./partials/header') %>
 
 
-    <main class="main-register">
-        <form action="/register" method="post" class="form-register" enctype="multipart/form-data">
-            <h2 class="tittle-register">Registrate!</h2>
-<!---->
-             <% if(locals.errors) { 
+                   <% if(locals.errors) { 
                 errors.forEach(error => { %>
                     <p class="form-error"> <%- error.msg  %></p>
                     <% } ) 
-                }  %> 
-
-        <div class="text">
-            <input class="input-register"type="text" name="nombre" id="Nombre" value="<%= locals.old && old.nombre ? old.nombre : ''  %>">
-            <label class="label-register" for="">Nombre</label>
-             
-        </div>
-        <div class="text">
-            <input class="input-register" type="text" name="usuario" id="usuario"value="<%= locals.old && old.usuario ? old.usuario : ''  %>" >
-            <label class="label-register" for="usuario">Nombre de Usuario</label>
-        </div>
-        <div class="text">
-            <input class="input-register" type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : ''  %>">
-            <label class="label-register" for="email">Email</label>
-        </div>
-        <div class="text">
-            <input class="input-register"type="date" name="fecha" id="fecha" value="<%= locals.old && old.fecha ? old.fecha : ''  %>">
-            <label class="label-register" for="fecha">Fecha de nacimiento</label>
-        </div>
-        <div class="text">
-            <input type="file" name="imagenUsuario" id="imagen">
-            <label for="imagen">Imagen de perfil</label>
-        </div>
-        <div class="text">
-            <input class="input-register" type="password" name="password" id="password" >
-            <label class="label-register" for="">Contraseña</label>
-        </div>
-        <div>
-            <a href="/user-edit/:id">Edita tu usuario</a>
-        </div>
-        <button class="btn-register" type="submit" >Registrarme</button>
-        
-    </form>
-</main>
+                }  %>  -->
 
 
-<script src="../controllers/validation.js" ></script>
+
+
+    <main class="main-register">
+		<form action="/register" class="formulario" id="formulario" enctype="multipart/form-data">
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123" value="<%= locals.old && old.usuario ? old.usuario : ''  %>">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe" value="<%= locals.old && old.nombre ? old.nombre : ''  %>">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" value="<%= locals.old && old.email ? old.email : ''  %>">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: fecha -->
+			<div class="formulario__grupo" id="grupo__fecha">
+				<label for="fecha" class="formulario__label">Fecha de nacimiento</label>
+				<div class="formulario__grupo-input">
+					<input type="date" class="formulario__input" name="fecha" id="fecha"  value="<%= locals.old && old.fecha ? old.fecha : ''  %>">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Seleccione su fecha de nacimiento.</p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+
+
+
+	<script src="/javascript/register.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+
+
+
     <%- include('./partials/footer.ejs')  %>
 
 </body>
