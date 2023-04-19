@@ -1,14 +1,21 @@
 const fs = require('fs');
 const path = require('path');
-const productsFilePath = path.join(__dirname,'../data/products.json');
+
+
+
+//json viejo
+
+ const productsFilePath = path.join(__dirname,'../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'));
 
+//database
+
 const db= require ('../database/models');
-const sequelize =db.sequelize;
+const sequelize = db.sequelize;
 const {Op} = require('sequelize');
 
 //Para llamar a los modelos con otro nombre 
-const producto = db.Producto; 
+const product = db.Product; 
 
 
 

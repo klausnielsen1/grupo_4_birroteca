@@ -16,7 +16,9 @@ const app=express();
 //MIDDLEWARES//
 app.use(express.urlencoded({extended:false}));
 app.use(methodOverride('_method'));
+
 app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(cookieParser());
 app.use(session({
     secret: 'hola',

@@ -2,7 +2,7 @@ module.exports = {
   "development": { //base de datos de desarrollo 
     "username": "root",
     "password": null,
-    "database": "birrotecaa",
+    "database": "birroteca",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
