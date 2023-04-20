@@ -65,7 +65,7 @@ module.exports={
         res.render('product-detail', {product});
     },
     product: (req,res)=>{
-        res.render('admin-product')
+        res.render('product-create')
     },
     list: (req, res) => {
         Producto.findAll()
