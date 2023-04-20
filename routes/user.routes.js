@@ -7,14 +7,14 @@ const {body}=require('express-validator')
 
 
 
-const validateCreateForm = [
-    body('nombre').notEmpty().withMessage('Debes completar el campo de nombre'),
-    body('usuario').notEmpty().withMessage('Debes completar el campo de usuario'),
-    body('email').isEmail().withMessage('Debes completar un email valido'),
-    body('fecha').notEmpty().withMessage('Debes seleccionar una fecha'),
-    body('imagenUsuario').notEmpty().withMessage('Debes seleccionar una imagen'),
-    body('password').notEmpty().withMessage('Debes completar el campo de Contraseña')
-]
+// const validateCreateForm = [
+//     body('nombre').notEmpty().withMessage('Debes completar el campo de nombre'),
+//     body('usuario').notEmpty().withMessage('Debes completar el campo de usuario'),
+//     body('email').isEmail().withMessage('Debes completar un email valido'),
+//     body('fecha').notEmpty().withMessage('Debes seleccionar una fecha'),
+//     body('imagenUsuario').notEmpty().withMessage('Debes seleccionar una imagen'),
+//     body('password').notEmpty().withMessage('Debes completar el campo de Contraseña')
+// ]
 
 
 let multerDiskStorage = multer.diskStorage({
@@ -30,7 +30,7 @@ let multerDiskStorage = multer.diskStorage({
 let fileUpload = multer({storage:multerDiskStorage})
 
 router.get('/register', userController.getRegister);
-router.post('/register', fileUpload.single('imagenUsuario'),validateCreateForm,userController.postUser);
+router.post('/register', fileUpload.single('userImg'),userController.postUser);
 
 router.get('/login', userController.getLogin);
 router.post('/login', userController.postLogin);
