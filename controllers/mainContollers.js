@@ -31,14 +31,14 @@ module.exports={
     },
     create: (req,res)=>{
         let productCreate = {
-            nombre: req.body.name,
+            name: req.body.name,
             id_categoria: req.body.category,
-            imagen:req.file.filename,
-            descripcion: req.body.description,
-            precio:req.body.price
+            image:req.file.filename,
+            description: req.body.description,
+            price:req.body.price
         } 
         console.log(productCreate)   
-        producto.create(productCreate)
+        product.create(productCreate)
             .then(producto=>{
                 res.redirect('/')
             })

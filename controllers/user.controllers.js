@@ -5,7 +5,7 @@ const bcrypt= require('bcryptjs');
 const multer=require('multer');
 const {validationResult}= require('express-validator');
 const db = require('../database/models');
-const users = db.clientes
+const users = db.clients
 
 
 
@@ -21,18 +21,19 @@ module.exports= {
     },
 
     postUser: function(req,res){
-        console.log(users);
         let usuario={
-            nombre: req.body.nombre,
-            usuario: req.body.usuario,
+            user: req.body.usuario,
+            name: req.body.nombre,
+            password:bcrypt.hashSync(req.body.password, 10),
             email: req.body.email,
-            imagen:req.body.productsImg,
-            fecha:req.body.fecha,
-            password:bcrypt.hashSync(req.body.password, 10)
+            birthdate:req.body.fecha,
+            avatar:req.file.filename,
         }
-        db.clientes.create(usuario)
+        console.log("usuario")
+        users.create(usuario)
             .then(usuario => {
                 res.redirect('/')
+                
             })
         
         
