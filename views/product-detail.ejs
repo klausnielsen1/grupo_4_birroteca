@@ -12,11 +12,15 @@
                 <div class="name-like">
 
                     <div class="container-name-product">
-                        <h3 class="name-product"><%= product.nombre %> </h3>
+                        <h3 class="name-product"><%= product.name %></h3>
                     </div>
 
                     <button class="like"><i class="fa-solid fa-heart-circle-plus"></i></button>
 
+                </div>
+
+                <div class="div-image">
+                    <img class="image-product" src="/images/<%= product.image %> " alt="">
                 </div>
 
                 <div class="container-btns-price">
@@ -24,43 +28,31 @@
                     <a href="/carrito"><button class="btn-buy">comprar</button>
 
                     <a href="/carrito"><button class="btn-cart-detail"><i class="fa-solid fa-cart-shopping"></i></button></a>
+                    <button class="btn-buy"><a href="/products/edit/<%= product.id %>">Editar Producto</a></button>
 
-                    <p class="price"> <%= product.precio %> </p>
+                    <form action="/products/delete/<%= product.id %>?_method=delete" method="post" >
+                        <button class="btn-buy" type="submit">borrar producto</button>
+                    </form>
+
+                    <p class="price">$ <%= product.price %> </p>
                 </div>
             
-
+                
             
-                <img class="image image-product" src="<%= product.imagen %> " alt="">
+                
             
         </div>
         <div class="description">
             <h3 class="title-desc">descripcion:</h3>
 
-            <p><%= product.nombre %> </p>
+            <p><%= product.name %> </p>
                 <br> <br>
             
-                <p><%= product.descripcion %> </p> 
+                <p><%= product.description %> </p> 
             
             <br><br>
-            <p>Alc 4.8%</p>
         </div>
 
-        <h3 class="title-recom">recomendados</h3>
-
-        <div class="recomendation">
-            <div class="opt-1">
-                <a href="#"><img class="img-rcm" src="images/lata2.jpg" alt=""></a>
-                <h5>Agua Bendita</h5>
-            </div>
-            <div class="opt-2">
-                <a href="#"><img class="img-rcm" src="images/lata6.jpg" alt=""></a>
-                <h5>Islas Flotantes</h5>
-            </div>
-            <div class="opt-3">
-                <a href="#"><img class="img-rcm" src="images/lata4.jpg" alt=""></a>
-                <h5>Manos Frescas</h5>
-            </div>
-        </div>
 
     </section>
 

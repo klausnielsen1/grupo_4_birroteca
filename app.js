@@ -2,7 +2,7 @@ const express=require('express');
 const path=require('path');
 
 const mainRouter=require('./routes/mainRoutes');
-const  userRouter= require('./routes/user.routes'); 
+const userRouter= require('./routes/user.routes'); 
 
 const methodOverride=require('method-override');
 const cookieParser= require ('cookie-parser');

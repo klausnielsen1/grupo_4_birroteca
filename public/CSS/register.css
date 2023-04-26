@@ -1,9 +1,4 @@
-.main-login{
-    margin-top: 14%;
-    margin-bottom: 14%;
-    background-color: #727272;
-    padding: 6%;
-}
+
 .main-register{
     padding: 8%;
 }
@@ -11,6 +6,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
+
 }
 
 .formulario__label {

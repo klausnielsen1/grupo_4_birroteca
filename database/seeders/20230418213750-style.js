@@ -2,7 +2,16 @@
 
 const estilos = [
   {
-    
+    name: 'Light lager'
+  },
+  {
+    name: 'Amber lager'
+  },
+  {
+    name: 'Fest bier'
+  },
+  {
+    name: 'Neipa'
   }
 ]
 

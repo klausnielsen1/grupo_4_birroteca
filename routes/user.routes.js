@@ -38,7 +38,7 @@ router.post('/login', userController.postLogin);
 //router.get('/usuarios',userController.listaUsuarios)
 
 //ruta para editar un usuario//
-router.get('/user-edit', userController.edit);
+
 
 //router.put('/products/:id/edit', userController.update);
 

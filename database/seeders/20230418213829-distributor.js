@@ -1,17 +1,25 @@
 'use strict';
 
+const distribuidores = [
+  {
+    name: 'ejemplo 1'
+  },
+  {
+    name: 'ejemplo 2'
+  },
+  {
+    name: 'ejemplo 3'
+  },
+  {
+    name: 'ejemplo 4'
+  }
+]
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+    Example:
+      await queryInterface.bulkInsert('Distributors', distribuidores, {});
   },
 
   async down (queryInterface, Sequelize) {

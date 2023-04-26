@@ -1,69 +1,129 @@
 const fs = require('fs');
 const path = require('path');
 
-
-
-//json viejo
-
- const productsFilePath = path.join(__dirname,'../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'));
-
 //database
 
 const db= require ('../database/models');
 const sequelize = db.sequelize;
 const {Op} = require('sequelize');
+const brand = require('../database/models/brand');
+const { log } = require('console');
 
 //Para llamar a los modelos con otro nombre 
-const product = db.Product; 
+
 
 
 
 
 module.exports={
     index: (req,res)=>{
-        //let id = req.params.id;
-        res.render('home', {productos: products}); //el de la derecha es products de json, 
-        //el de la izquierda es el alias con el que lo llamamos desde la vista. 
+        const products = db.Product.findAll({
+            where: {idCategory: 1}
+        });
+        const merchandising = db.Product.findAll({
+            where: {idCategory: 2}
+        });
+        Promise.all([products, merchandising])
+        .then(([products, merchandising]) => {
+            return res.render('home', {products, merchandising});
+        })
+          
     },
-    add: (req,res)=>{
-        res.render('product-create')
+    add: async (req,res)=>{
+        const brands = await db.Brand.findAll();
+        const categories = await db.Category.findAll();
+        const distributors = await db.Distributor.findAll();
+        const styles = await db.Style.findAll();
+        Promise.all([brands, categories, distributors, styles])
+        .then(([brands, categories, distributors, styles]) => {
+            return res.render('product-create', {
+                brands,
+                categories,
+                distributors,
+                styles
+            })
+        })
+        .catch(error => console.log(error))
+        
     },
     create: (req,res)=>{
-        let productCreate = {
-            name: req.body.name,
-            id_categoria: req.body.category,
-            image:req.file.filename,
-            description: req.body.description,
-            price:req.body.price
-        } 
-        console.log(productCreate)   
-        product.create(productCreate)
-            .then(producto=>{
-                res.redirect('/')
+        const {name,description,price,brand,style,distributor,category} = req.body;
+        const image = req.file.filename;
+        db.Product.create({
+        name: name.trim(),
+        image: image.trim(),
+        description: description.trim(),
+        price: +price,
+        idBrand: +brand,
+        idStyle: +style,
+        idDistributor: +distributor,
+        idCategory: +category
+        })
+        .then(product => {
+            res.redirect('/')
+        })
+    },
+    edit: (req,res)=>{
+        const id = req.params.id;
+        const product = db.Product.findByPk(id);
+        const brands = db.Brand.findAll();
+        const styles = db.Style.findAll();
+        const distributors = db.Distributor.findAll();
+        const categories = db.Category.findAll();
+        
+        Promise.all([product, brands, styles, distributors, categories])
+        .then(([product, brands, styles, distributors, categories]) => {
+            res.render('product-edit',{
+                product,
+                brands,
+                styles,
+                distributors,
+                categories
             })
-        
-        
-        
-        // const productsFilePath = path.join(__dirname,'../data/products.json');
-        // const products = JSON.parse(fs.readFileSync(productsFilePath));
-        // products.push(req.body);
-        // const newProducts = JSON.stringify(products);
-        // fs.writeFileSync(path.join(__dirname,'../data/products.json'),newProducts);
-        // res.redirect('/')
+        })
+
+    },
+    
+    update: (req,res)=>{
+        const id = req.params.id
+        const {name,description,price,brand,style,distributor,category} = req.body;
+        const image = req.file.filename;
+        db.Product.update({
+        name: name.trim(),
+        image: image.trim(),
+        description: description.trim(),
+        price: +price,
+        idBrand: +brand,
+        idStyle: +style,
+        idDistributor: +distributor,
+        idCategory: +category
+        },{
+            where:  {
+                id: id 
+            }
+        });
+        res.redirect('/')
 
 
     },
+
+    detail: (req,res)=>{
+        const product = db.Product.findByPk(req.params.id);
+
+        Promise.all([product])
+        .then(([product]) =>{
+            return res.render('product-detail',{product})
+    })
+        .catch(errors => console.log(errors))
+    },
+
+
     
     
     carrito: (req,res)=>{
         res.render('carrito')
     },
-    detail: (req,res)=>{
-        let id = req.params.id;
-        let product = products.find(product=>product.id==id);
-        res.render('product-detail', {product});
-    },
+    
     product: (req,res)=>{
         res.render('product-create')
     },
@@ -75,79 +135,18 @@ module.exports={
         
     },
 
-    edit: (req,res)=>{
-        let id = req.params.id;
-        let product = db.Producto.findByPk(id,{
-            //include:[{association: "carrito"},{association: "stock"},{association: "categoria"},{association: "marca"},{association: "estilo"},{association: "distribuidor"}]
-        })
-        // let product = products.find(product=>product.id==id);
-        res.render('product-edit',{product});
 
-    },
-    update: (req,res)=>{
-        db.Producto.update({
-            name: req.body.name,
-            category: req.body.category,
-            descripcion: req.body.desciption,
-            price:req.body.price
-        },{
-            where:  {
-                id:  req.params.id 
-            }
-        });
-        res.redirect('/')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    },
-
-
-        // let id = req.params.id;
-        // let product = products.find(product=>product.id==id);
-        // let productToEdit = {
-        //     id,
-        //     estilo: req.body.estilo,
-        //     marca: req.body.marca,
-        //     nombre :req.body.name,
-        //     categoria :req.body.category,
-        //     imagen: req.body.imagen,
-        //     descripcion: req.body.description,
-        //     precio: req.body.price
-        // }
-        
-        // let newProducts = products.map(product=>{
-
-        //     if(product.id==id){
-        //         return product = {...productToEdit}
-        //     }
-        //     return product
-        // })
-        
-        // fs.writeFileSync(path.join(__dirname,'../data/products.json'),JSON.stringify(newProducts));
-        
-        // res.redirect('/')
 
     delete: (req,res)=>{
-        db.Producto.destroy({
+        db.Product.destroy({
             where:{
                 id: req.params.id
             }
-        });
-        res.redirect('/')
+        })
+        .then(() =>{
+            return res.redirect('/');
+        })
+        
 
 
 

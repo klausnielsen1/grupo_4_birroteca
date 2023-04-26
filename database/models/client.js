@@ -20,10 +20,10 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     birthdate: DataTypes.STRING,
     avatar: DataTypes.STRING,
-    //idClass: DataTypes.INTEGER
+    idClass: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'clients',
+    modelName: 'Client',
   });
   return Client;
 };

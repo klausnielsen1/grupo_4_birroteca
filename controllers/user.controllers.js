@@ -5,7 +5,6 @@ const bcrypt= require('bcryptjs');
 const multer=require('multer');
 const {validationResult}= require('express-validator');
 const db = require('../database/models');
-const users = db.clients
 
 
 
@@ -21,53 +20,22 @@ module.exports= {
     },
 
     postUser: function(req,res){
-        let usuario={
-            user: req.body.usuario,
-            name: req.body.nombre,
-            password:bcrypt.hashSync(req.body.password, 10),
-            email: req.body.email,
-            birthdate:req.body.fecha,
-            avatar:req.file.filename,
-        }
-        console.log("usuario")
-        users.create(usuario)
-            .then(usuario => {
-                res.redirect('/')
-                
-            })
-        
-        
-        
-    
+        const {name,birthdate,password,lastname,email} = req.body
+        const avatar = req.file.filename
 
-        // let errors = validationResult(req);
-        // if (errors.isEmpty()){
-
-        //     const users= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json')));
-            
-    
-        //     const userData= {
-        //         nombre: req.body.nombre,
-        //         usuario: req.body.usuario,
-        //         email: req.body.email,
-        //         fecha: req.body.fecha,
-        //         password: bcrypt.hashSync(req.body.password, 10) 
-                
-        //     }
-        
-        //     users.push(userData);   
-        //     fs.writeFileSync(path.join(__dirname, '../data/users.json'), (JSON.stringify(users)));
-        
-        //     res.redirect('/')
-        // } else {
-        //     res.render('register',{
-        //         errors:errors.array(),
-        //         old:req.body
-        //     })
-        // }
-
-
-
+        db.Client.create({
+            name,
+            birthdate,
+            password :  bcrypt.hashSync(password, 12),
+            lastname,
+            email,
+            avatar,
+            idClass : 2
+        })
+        .then(()=>{
+            return res.redirect('/')
+        })
+        .catch(errors => console.log(errors))
 
     },
 
@@ -105,22 +73,15 @@ module.exports= {
         }
     },
 
-    //función EDIT
 
-    edit: function (req,res){
-        res.render('user-edit')
-    },
-
-
-    //delete user
-
-    delete: function(req,res){
-        users.query('DELETE FROM cliente WHERE id = ?',[req.params.id],(err, rows, fields) => {
-            if(!err)
-            res.send('borrado')
-            else
-            console.log(err)
+    delete: (req,res)=>{
+        db.Client.destroy({
+            where:{
+                id: req.params.id
+            }
+        })
+        .then(() =>{
+            return res.redirect('/');
         })
     }
-
 }

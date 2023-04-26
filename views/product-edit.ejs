@@ -7,47 +7,57 @@
     <%- include('./partials/header') %>
 
     <section class="section-admin-produ">
-        <h1>Estas editando <%=product.nombre %> </h1>
-        <form action="/products/<%=product.id%>/edit?_method=PUT" method="POST">
+        <h1>Estas editando <%= product.name %></h1>
+        <form action="/products/edit/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
 
             <label for="name">Nombre:</label>
-            <input type="text" name="name" id="name" value="<%=product.nombre %>">
+            <input type="text" name="name" id="name" value="<%= product.name ? product.name : null %>">
 
-            <label for="category">Categoria:</label>
-            <select name="category" id="category">
-                <% if (product.categoria=="cerveza") { %>
-                    
-                    <option value="cerveza" selected="selected">Cerveza</option>
-                <% } else {%>
-                    <option value="cerveza">Cerveza</option>
-                <% } %> 
-                <% if (product.categoria=="merchandising") { %>
-                
-                    <option value="cerveza" selected="selected">Merchandising</option>
-                <% } else {%>
-                    <option value="cerveza">Merchandising</option>
-                <% } %>         
+            <label for="description">description:</label>
+            <input type="text" name="description" id="description" value="<%= product.description ? product.description : null %>">
+
+            <label for="price">price:</label>
+            <input type="number" name="price" id="price" value="<%= product.price ? product.price : null %>">
+
+            <label for="brand">brand:</label>
+            <select name="brand" id="brand">
+                <% brands.forEach(brand => { %>
+                 <option value="<%= brand.id %>"><%= brand.name %></option>
+                <% }) %>
             </select>
-            <label for="estilo">Estilo:</label>
-            <input type="text" name="estilo" id="estilo" value="<%= product.estilo %> ">
 
-            <label for="marca">Marca:</label>
-            <input type="text" name="marca" id="marca" value="<%= product.marca %> ">
+            <label for="style">style:</label>
+            <select name="style" id="style">
+                <% styles.forEach(style => { %>
+                 <option value="<%= style.id %>" <%= style.id === product.idStyle && 'selected' %>><%= style.name %></option>
+                <% }) %>
+            </select>
 
+            <label for="distributor">distributor:</label>
+            <select name="distributor" id="distributor">
+                <% distributors.forEach(distributor => { %>
+                    <option value="<%= distributor.id %>" <%= distributor.id === product.idDistributor && 'selected' %>><%= distributor.name %></option>
+                   <% }) %>
+            </select>
+
+            <label for="category">category:</label>
+            <select name="category" id="category">
+                <% categories.forEach(category => { %>
+                    <option value="<%= category.id %>" <%= category.id === product.idCategory && 'selected' %>><%= category.name %></option>
+                   <% }) %>
+            </select>
+        
             <label for="image">Imagen:</label>
-            <input type="file" name="image" id="image" value="<%= product.imagen %> ">
+            <input type="file" name="productImg" id="image">
 
-            <label for="description">Descripcion:</label>
-            <input type="text" name="description" id="description" value="<%=product.descripcion %> ">
-
-            <label for="price">Precio:</label>
-            <input type="text" name="price" id="price" value="<%= product.precio %> ">
-
+            <!--FALTA AGREGAR MARCA Y ESTILO-->
             <button type="submit">Enviar</button>
 
-            <button>Borrar</button>
+            <button type="reset">Borrar</button>
 
         </form>
+
+        
     </section>
 
     <%- include('./partials/footer.ejs')  %>

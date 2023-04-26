@@ -3,14 +3,18 @@
     height: 100px;
     width: auto;
 }
-
-
+.cart-main{
+    padding: 300px;
+}
+.cart-main p {
+    color: #e7e6e6;
+}
 .caja-grande{
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(43, 43, 43, 0.466);
     border-radius: 10px;
     text-align: center;
-    border: 2px solid white;
+
     
 }
 .caja-arriba{
@@ -21,13 +25,12 @@
     justify-content: space-between;
     padding: 0px 10px 0px 10px;
     text-align: center;
-   
+   margin-bottom: 6px;
 }
 .caja-abajo{
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    border-top: 2px solid white;
     justify-content: space-between;
     padding: 0px 10px 0px 10px;
 }
@@ -43,7 +46,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgba(43, 43, 43, 0.466);
     
 
 }
@@ -69,7 +72,7 @@
     flex-direction: row;
 }
 .inserte-cupon{
-    background: #4568DC;
+    background-color: rgba(43, 43, 43, 0.466);
     border: none;
     border-radius: 10px;
     width: 200px;
@@ -80,7 +83,7 @@
     font-size: 16px;
 }
 .cupon{
-    background: #4568DC;
+    background-color: rgba(43, 43, 43, 0.466);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -97,7 +100,7 @@
     
 }
 .btn-cart{
-    background: #4568DC;
+    background-color: rgba(43, 43, 43, 0.466);
     border: none;
     border-radius: 10px;
     display: block;
@@ -110,8 +113,7 @@
 }
 
 .btn-cart:hover{
-   background:#4568DC;
-   background-color: #B06AB3;
-   color: #fff;
+    background-color: rgba(43, 43, 43, 0.466);
+    color: #fff;
 	transition: background, 1s, background-color, 1s;
 }

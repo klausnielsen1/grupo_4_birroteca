@@ -26,45 +26,25 @@ const storage = multer.diskStorage({
   });
   const upload = multer({ storage });
 
-
+router.get('/',mainController.index);
 
 router.get('/carrito',mainController.carrito);
 
-router.get('/',mainController.index);
-
-router.get('/admin',mainController.product);
-
 router.get('/products/create',mainController.add );
-
-
-
-
-router.get('/products/:id/edit',mainController.edit);
-router.put('/products/:id/edit',mainController.update);
-
-router.get('/products/:id',mainController.detail );
 router.post('/products/create',upload.single('productImg'),validateCreateForm,mainController.create)
-router.delete('/:id', mainController.delete)
-
-//**modificaciones 29/03
-
-//ruta para LIST
-//router.get('/productos', mainController.list)
 
 
-//ruta para agregar un producto
-//router.get('/products/create', mainController.add);
-//router.post('/products/create', mainController.create) //esta es la ruta que figura en el formulario de creación 
+router.get('/products/edit/:id',mainController.edit);
+router.put('/products/edit/:id',upload.single('productImg'),mainController.update);
+
+router.get('/products/:id',mainController.detail);
+
+router.delete('/products/delete/:id', mainController.delete)
 
 
 
-//rutas para la creación de CRUD
-//(mainController.add)
-//(mainController.create)
 
 
-//(mainController.edit)
-//(mainController.update)
-//(mainController.delete)
+
 module.exports = router
 

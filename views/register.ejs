@@ -19,11 +19,11 @@
 
     <main class="main-register">
 		<form action="/register" class="formulario" id="formulario" enctype="multipart/form-data" method="POST">
-			<!-- Grupo: Usuario -->
+			<!-- Grupo: lastname -->
 			<div class="formulario__grupo" id="grupo__usuario">
-				<label for="usuario" class="formulario__label">Usuario</label>
+				<label for="lastname" class="formulario__label">Apellido</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123" value="<%= locals.old && old.usuario ? old.usuario : ''  %>">
+					<input type="text" class="formulario__input" name="lastname" id="lastname" placeholder="john123" value="<%= locals.old && old.lastname ? old.lastname : ''  %>">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
@@ -31,9 +31,9 @@
 
 			<!-- Grupo: Nombre -->
 			<div class="formulario__grupo" id="grupo__nombre">
-				<label for="nombre" class="formulario__label">Nombre</label>
+				<label for="name" class="formulario__label">Nombre</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe" value="<%= locals.old && old.nombre ? old.nombre : ''  %>">
+					<input type="text" class="formulario__input" name="name" id="nombre" placeholder="John Doe" value="<%= locals.old && old.nombre ? old.nombre : ''  %>">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
@@ -61,9 +61,9 @@
 
 			<!-- Grupo: Correo Electronico -->
 			<div class="formulario__grupo" id="grupo__correo">
-				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<label for="email" class="formulario__label">Correo Electrónico</label>
 				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" value="<%= locals.old && old.email ? old.email : ''  %>">
+					<input type="email" class="formulario__input" name="email" id="email" placeholder="correo@correo.com" value="<%= locals.old && old.email ? old.email : ''  %>">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
@@ -77,9 +77,9 @@
 
 			<!-- Grupo: fecha -->
 			<div class="formulario__grupo" id="grupo__fecha">
-				<label for="fecha" class="formulario__label">Fecha de nacimiento</label>
+				<label for="birthdate" class="formulario__label">Fecha de nacimiento</label>
 				<div class="formulario__grupo-input">
-					<input type="date" class="formulario__input" name="fecha" id="fecha"  value="<%= locals.old && old.fecha ? old.fecha : ''  %>">
+					<input type="date" class="formulario__input" name="birthdate" id="birthdate"  value="<%= locals.old && old.fecha ? old.fecha : ''  %>">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">Seleccione su fecha de nacimiento.</p>

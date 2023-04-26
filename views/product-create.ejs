@@ -6,32 +6,63 @@
 <body class="body-admin-produ">
     <%- include('./partials/header') %>
 
+
+
+
     <section class="section-admin-produ">
-        <h1>Agregar/Modificar producto</h1>
+        <h1>Agregar producto</h1>
         <form action="/products/create" method="POST" enctype="multipart/form-data">
 
             <label for="name">Nombre:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" >
 
-            <label for="category">Categoria:</label>
+            <label for="description">description:</label>
+            <input type="text" name="description" id="description">
+
+            <label for="price">price:</label>
+            <input type="number" name="price" id="price">
+
+            <label for="brand">brand:</label>
+            <select name="brand" id="brand">
+                <% brands.forEach(brand => { %>
+                 <option value="<%= brand.id %>"><%= brand.name %></option>
+                <% }) %>
+            </select>
+
+            <label for="style">style:</label>
+            <select name="style" id="style">
+                <% styles.forEach(style => { %>
+                 <option value="<%= style.id %>"><%= style.name %></option>
+                <% }) %>
+            </select>
+
+            <label for="distributor">distributor:</label>
+            <select name="distributor" id="distributor">
+                <% distributors.forEach(distributor => { %>
+                    <option value="<%= distributor.id %>"><%= distributor.name %></option>
+                   <% }) %>
+            </select>
+
+            <label for="category">category:</label>
             <select name="category" id="category">
-                <option value="1">Cerveza</option>
-                <option value="2">Merchandisign</option>
+                <% categories.forEach(category => { %>
+                    <option value="<%= category.id %>"><%= category.name %></option>
+                   <% }) %>
             </select>
         
             <label for="image">Imagen:</label>
             <input type="file" name="productImg" id="image">
 
-            <label for="description">Descripcion:</label>
+            <!-- <label for="description">Descripcion:</label>
             <input type="text" name="description" id="description">
 
             <label for="price">Precio:</label>
-            <input type="number" name="price" id="price">
+            <input type="number" name="price" id="price"> -->
 
             <!--FALTA AGREGAR MARCA Y ESTILO-->
-            <button>Enviar</button>
+            <button type="submit">Enviar</button>
 
-            <button>Borrar</button>
+            <button type="reset">Borrar</button>
 
         </form>
     </section>

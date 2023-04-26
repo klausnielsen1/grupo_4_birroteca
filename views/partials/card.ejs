@@ -1,17 +1,14 @@
 <!--Plantilla que se rellena con información de cada producto-->
-
-<% productos.forEach(product => { %>
     <article class="product-home">
         <a href="/products/<%=product.id%>">
             <div>
-                <img class="image-product-home" src="<%=product.imagen %>" alt="imagen-producto">
+                <img class="image-product-home" src="images/<%=product.image %>" alt="imagen-producto">
             </div>
             <div class="descripcion">
                
-                <p class="precio"><%= product.precio %> </p>
+                <p class="precio">$<%= product.price %> </p>
                 
-                <p class="nombre"><%= product.nombre %></p>
+                <p class="nombre"><%= product.name %></p>
             </div>
         </a>                   
     </article>
-<% }) %>
