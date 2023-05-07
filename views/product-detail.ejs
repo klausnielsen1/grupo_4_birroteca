@@ -28,11 +28,13 @@
                     <a href="/carrito"><button class="btn-buy">comprar</button>
 
                     <a href="/carrito"><button class="btn-cart-detail"><i class="fa-solid fa-cart-shopping"></i></button></a>
+                    <% if (isLogged) { %>
                     <button class="btn-buy"><a href="/products/edit/<%= product.id %>">Editar Producto</a></button>
 
                     <form action="/products/delete/<%= product.id %>?_method=delete" method="post" >
                         <button class="btn-buy" type="submit">borrar producto</button>
                     </form>
+                    <% } %>
 
                     <p class="price">$ <%= product.price %> </p>
                 </div>
